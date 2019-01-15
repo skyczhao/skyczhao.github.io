@@ -1,0 +1,43 @@
+<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> ElasticSearch源码开发环境配置 · 十三羽</title><meta name="description" content="ElasticSearch源码开发环境配置 - Tobin"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110577953-1"></script><script type="text/javascript">window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-110577953-1');</script></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/CV" target="_self" class="nav-list-link">CV</a></li><li class="nav-list-item"><a href="/about" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">ElasticSearch源码开发环境配置</h1><div class="post-info">Jun 26, 2016</div><div class="post-content"><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>由于项目需求，最近对ElasticSearch（以下简称ES）源码进行阅读分析，并进行了改造，以适应客户要求。<br>大家都知道ES是一个开源的项目，而且它在Github上托管了源码。所以源码可以很容易获得。</p>
+<a id="more"></a>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h3><ul>
+<li>version：1.7.1</li>
+<li>size：21M</li>
+<li>desc：也是项目的原因，这里用的ES版本是1.7.1。从Github上的tag版本中选择1.7.1，然后使用clone或者zip的方式下载源码即可。</li>
+</ul>
+<h3 id="打开"><a href="#打开" class="headerlink" title="打开"></a>打开</h3><ul>
+<li>IDE：IntelliJ IDEA 15</li>
+<li>desc：IDEA据说是最好的Java IDE。</li>
+</ul>
+<h3 id="依赖配置"><a href="#依赖配置" class="headerlink" title="依赖配置"></a>依赖配置</h3><p>像流行的方式一样，ES也采用了maven对各种依赖关系进行管理。而且IDEA对maven项目的支持还是蛮好的，打开ES项目后，选择允许自动下载依赖，IDEA就会调用maven下载依赖的jar。</p>
+<h3 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h3><ul>
+<li>main class：<code>org.elasticsearch.bootstrap.Bootstrap</code></li>
+<li>options：<code>-Des.foreground=yes</code> （前台显示日志）</li>
+<li>desc：如下图，打开运行配置窗口后，填写如下配置。从中可以发现ES是通过Bootstrap进行启动的，后面随着源码阅读的深入，会发现ES另一个重要的运行工具：通过Guice进行注入。</li>
+</ul>
+<p><img src="/2016/06/26/es-build-setup/1.png" alt="运行参数配置"></p>
+<ul>
+<li>配置完后直接运行，访问<code>http://localhost:9200/</code>看一下输出就可以确认ES启动成功。</li>
+</ul>
+<h3 id="插件配置"><a href="#插件配置" class="headerlink" title="插件配置"></a>插件配置</h3><h4 id="head"><a href="#head" class="headerlink" title="head"></a>head</h4><p>裸的ES，要么通过API（如Java API）执行访问，要么通过RestfulAPI进行访问，但是都显得没那么人性化。所以这里会选择装上head插件，一方面方便看资源状况，另一方面方便访问（在窗口改query body明显舒服很多）.<br>安装方式跟正式的ES node差不多，同样在Github上下好对应版本的head插件，解压到ES项目下的<code>plugins</code>目录即可，然后通过<code>http://localhost:9200/_plugin/head/</code>进行访问。<br>为了方便编辑和查看json结果，我上网找了一圈好用的插件或者应用，发现直接一个web app就足够了，可以参考一下<code>http://codebeautify.org/jsonviewer</code></p>
+<h4 id="IK"><a href="#IK" class="headerlink" title="IK"></a>IK</h4><p>相信在处理汉语的时候，分词是个重要的问题。这里会直接选用流行的IK分词进行使用，其也支持自定义词库。不过这里使用的主要目的是为了测试而模拟真实的线上环境，以用于开发调试。所以没太考虑效果，有就行。<br>配置的方式：</p>
+<ol>
+<li>选择合适版本，ik 1.2.6 -&gt; es1.7.1，也可以在Github上下载得到</li>
+<li>可以自己打包，配置都在ik项目的<code>config</code>目录下，包括配置和词库，不用上网找，直接拿来使用</li>
+<li>跟head插件的方式类似，同样放在<code>plugins</code>目录下，对应增加<code>elasticsearch.yml</code>的配置即可</li>
+<li>坑：想要测试的话，这个版本的ik分词要求先有索引，指定调用ik分词字段，然后才会加载使用，README上说的内容稍显过时。</li>
+<li>参考测试：<code>http://localhost:9200/your_index/_analyze?analyzer=ik&amp;pretty=true&amp;text=%E6%88%91%E6%98%AF%E4%B8%AD%E5%9B%BD%E4%BA%BA</code></li>
+</ol>
+<p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2016/06/26/es-build-setup/">http://www.thirteenyu.com/2016/06/26/es-build-setup/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>
+</div></article></div></section><footer><div class="paginator"><a href="/2016/07/05/graduate-beyond-the-rule/" class="prev">上一篇</a><a href="/2016/06/13/es-move-shard/" class="next">下一篇</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'thirteenyu';
+var disqus_identifier = '2016/06/26/es-build-setup/';
+var disqus_title = 'ElasticSearch源码开发环境配置';
+var disqus_url = 'http://www.thirteenyu.com/2016/06/26/es-build-setup/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//thirteenyu.disqus.com/count.js" async></script><div class="copyright"><p>Hosted by <a href="https://pages.github.com">Github Pages</a> / <a href="https://pages.coding.me">Coding Pages</a></p><p>© 2010 - 2019 <a href="http://www.thirteenyu.com">Tobin</a>, unless otherwise noted.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script></body></html>

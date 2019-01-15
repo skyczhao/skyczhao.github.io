@@ -1,0 +1,92 @@
+<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Linux下常用软件列表 · 十三羽</title><meta name="description" content="Linux下常用软件列表 - Tobin"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110577953-1"></script><script type="text/javascript">window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-110577953-1');</script></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/CV" target="_self" class="nav-list-link">CV</a></li><li class="nav-list-item"><a href="/about" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">Linux下常用软件列表</h1><div class="post-info">May 3, 2016</div><div class="post-content"><h2 id="一般源码安装方法"><a href="#一般源码安装方法" class="headerlink" title="一般源码安装方法"></a>一般源码安装方法</h2><ol start="0">
+<li>configure<br> 可能换成cmake<br> 这里有很大自定义性，可以修改编译参数，也可以定义安装位置。另外，如果发现某些功能没及时打开时，可以重新configure然后编译。<br> 可能出现找不到系统变量的问题，所以这里的调整性也挺大的。如果怕麻烦，写个脚本解决。</li>
+<li>make<br> 需要重新编译的话一般可以用make clean先清空旧的。<br> 奇葩问题比较多，手动修改源码也有可能。</li>
+<li>make install<br> 如果是安装在root权限目录的话，需要sudo或者管理员安装。<br> 安装过程一般没问题，问题出现在configure和make过程，缺包或者编译出错都有可能。需要重新安装时，删掉重来，这可跟windows有很大差别。<br> 一般装完后还有许多环境设置。</li>
+</ol>
+<a id="more"></a>
+<h2 id="系统工具"><a href="#系统工具" class="headerlink" title="系统工具"></a>系统工具</h2><ol start="0">
+<li>terminator<br> 增强型终端，可以代替原来的terminal</li>
+<li>sudo<br> 修改权限的重要工具</li>
+<li>ssh<br> 远程连接电脑必须品</li>
+<li>vnc<br> 远程linux桌面，类似于ssh，也需要开启服务。包括vncserver、vncviewer</li>
+<li>scp<br> 传送文件命令，更多功能自己探究</li>
+<li>zsh<br> 可以换掉默认的bash！自己选择，配置有这个: <a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="noopener">oh-my-zsh</a>。可能不兼容bash，所以可以结合terminator使用。</li>
+<li>dconf-editor<br> 配置工具</li>
+<li>gnome-tweak-tool<br> 桌面配置</li>
+<li>ranger</li>
+<li>gparted<br> 注意小心使用，毕竟是系统操作。注意拼写，别打错软件名字。</li>
+</ol>
+<h2 id="网络浏览"><a href="#网络浏览" class="headerlink" title="网络浏览"></a>网络浏览</h2><ol start="0">
+<li>chrome<br> 如果不习惯Firefox的话，chrome是个好选择。</li>
+<li>jre<br> 一般情况下很少用到，不同于jdk，jre是允许网页运行小java程序的java环境，以一个插件形式出现。<br> 可以利用这个测试：<a href="http://www.csie.ntu.edu.tw/~cjlin/libsvm/" target="_blank" rel="noopener">http://www.csie.ntu.edu.tw/~cjlin/libsvm/</a></li>
+<li>goagent<br> 不翻墙也可以不装，其实也有别的翻墙工具。</li>
+<li>flash<br> 安装方法各异，自行查找。</li>
+<li>wget<br> 命令行下载工具</li>
+<li>skype</li>
+<li>astrill</li>
+</ol>
+<h2 id="开发工具"><a href="#开发工具" class="headerlink" title="开发工具"></a>开发工具</h2><ol start="0">
+<li>vim<br> 这个的重要性就不讨论了。如果想支持系统粘贴板，还要装一下这个：vim-gui-common</li>
+<li>gcc-gdb<br> 写c程序必备，如果有钱，也可以买icc玩一下。<br> debian系统下可以用装build-essential，安装gcc等一些开发的软件。</li>
+<li>cmake<br> 安装某些应用程序的时候需要</li>
+<li>cuda<br> 安装cuda，同时最大的问题是N卡驱动。</li>
+<li>jdk<br> 可以安装官方版本，也可以安装开源版本。</li>
+<li>eclipse<br> 不解释。</li>
+<li>git<br> 不解释，版本控制工具，而且不仅如此简单。</li>
+<li>xampp<br> 仅仅是为了开发环境，生产环境还需要自己另外调优，并独立安装。</li>
+<li>subversion<br> 另一个版本控制工具。</li>
+<li>understand(scitools)<br> 代码查看工具，需要破解。</li>
+<li>openmpi<br>偏向性地选择这个mpi，性能应该是intel mpi与mpich之间，据说最好是intel mpi。</li>
+<li>code::blocks<br>C/C++ IDE，取代VS。</li>
+<li>geany</li>
+<li>sublime</li>
+<li>meld</li>
+<li>umbrello、Dia</li>
+<li>GanttProject</li>
+<li>PhpStorm</li>
+<li>Spyder</li>
+<li>tau<br>源码级别分析工具</li>
+</ol>
+<h2 id="办公程序"><a href="#办公程序" class="headerlink" title="办公程序"></a>办公程序</h2><ol start="0">
+<li>wine、PlayOnLinux<br> 作为模拟器，还是有点差别的，不建议使用。</li>
+<li>unrar、unzip<br> 小工具，系统可能自带，也可能没有，主要也是增强对windows转移过来的文件的支持。</li>
+<li>fcitx、fcitx-pinyin<br> fcitx貌似比ibus更好</li>
+<li>shutter、scrot<br> 截图工具，shutter还自带编辑！</li>
+<li>clamAV<br> Linux下的开源防病毒软件，<code>-_-|||</code>。<br> 可能需要安装clamav-update、以及clamtk，还需要自己手动编辑/etc/freshclam.conf以启用更新</li>
+<li>TeamViewer<br> 远程控制电脑，包括手机。windows、linux、android通用！</li>
+<li>stardict<br> 星际译王</li>
+<li>mendeley<br> 文献管理工具！</li>
+<li>FileZilla</li>
+<li>LaTeX<br> texlive、lyx</li>
+<li>VirtualBox<br>最好通过官网的方法安装，源里面的版本可能太低，有较多bug。</li>
+<li>FoxitReader<br>替代系统的pdf reader。</li>
+<li>WPS<br>ubuntu下表现良好，装上微软字体后支持不错。</li>
+<li>ReText<br>桌面markdown编辑工具，支持实时显示效果，ctrl+l，或者ctrl+e，快捷键显示所见即所得编辑。</li>
+<li>Kazam<br>屏幕录像</li>
+<li>dropbox</li>
+<li>RealVNC</li>
+</ol>
+<h2 id="娱乐工具"><a href="#娱乐工具" class="headerlink" title="娱乐工具"></a>娱乐工具</h2><ol start="0">
+<li>smplayer、mplayer<br> 貌似比VLC好多了，但VLC在ubuntu下表现良好。貌似smplayer很棒！</li>
+<li>audacious<br> 比较好的音乐播放器，可能需要安装插件audacious-plugins-freeworld</li>
+<li>eog<br> 看图工具！</li>
+<li>Gwenview</li>
+</ol>
+<h2 id="美化工具"><a href="#美化工具" class="headerlink" title="美化工具"></a>美化工具</h2><ol start="0">
+<li>conky<br> 配置丰富，可以用lua做。</li>
+<li>gimp<br> linux下的PS</li>
+<li>inkscape<br> linux下的AI</li>
+</ol>
+<p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2016/05/03/list-linux-apps/">http://www.thirteenyu.com/2016/05/03/list-linux-apps/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>
+</div></article></div></section><footer><div class="paginator"><a href="/2016/05/03/list-comic/" class="prev">上一篇</a><a href="/2016/03/31/list-win-apps/" class="next">下一篇</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'thirteenyu';
+var disqus_identifier = '2016/05/03/list-linux-apps/';
+var disqus_title = 'Linux下常用软件列表';
+var disqus_url = 'http://www.thirteenyu.com/2016/05/03/list-linux-apps/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//thirteenyu.disqus.com/count.js" async></script><div class="copyright"><p>Hosted by <a href="https://pages.github.com">Github Pages</a> / <a href="https://pages.coding.me">Coding Pages</a></p><p>© 2010 - 2019 <a href="http://www.thirteenyu.com">Tobin</a>, unless otherwise noted.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script></body></html>

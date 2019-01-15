@@ -1,0 +1,33 @@
+<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Java并发编程实践-笔记01 · 十三羽</title><meta name="description" content="Java并发编程实践-笔记01 - Tobin"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110577953-1"></script><script type="text/javascript">window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-110577953-1');</script></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/CV" target="_self" class="nav-list-link">CV</a></li><li class="nav-list-item"><a href="/about" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">Java并发编程实践-笔记01</h1><div class="post-info">Apr 10, 2018</div><div class="post-content"><p>自己立的flag，要自己扛起来。周日(2018.04.08)看了辉哥的一篇文章 - <a href="http://mp.weixin.qq.com/s/-DKeoKaoi00s2OYw95Jn0g" target="_blank" rel="noopener">用「三遍写作法」完成日更</a>，于是自己默默定下每天日更，无论长短。</p>
+<p>最近感觉技术上走到瓶颈。要说解决问题、实现功能的，自己也可以完成，完成的质量也不会很差；但就感觉没有很理想，缺乏进阶一点的认知。自己在2017年尝试自己设计一个爬虫框架，有点过度设计的嫌疑，写到一半自己写不下去了；然后在工作中遇到小伙伴的问题，自己有时也会一问三不知，虽然会用，在自己的手下倒是都能用得很溜，但是对别人提出的问题就是无法解答。</p>
+<p>自己也很郁闷，所以看书补充下知识。造成这种现状，其实跟自己实用主义的思想有关，很多技术、算法，仅仅停留于能用起来、能解决业务就停止了，没有进一步拓展。同时毕业之后也很少持续阅读和学习，于是短板一直没补上。经常会被内行人问到语塞。书籍是最好的老师，所以。</p>
+<p>但从何阅读而起？犹豫的时候，看到知乎上的一篇回答 - <a href="http://daily.zhihu.com/story/9677545" target="_blank" rel="noopener">当年自学踩过无数坑，最后才发现「操作系统」应该这么学</a>。所以决定先按此路走一下，看下效果。也即从《Linux内核设计与实现》开始，然后APUE之类的。</p>
+<p>这里是看到自己手上也有这么一本书，就顺手也看了。其他的书籍会在新的博文中跟进。</p>
+<a id="more"></a>
+<h2 id="Java并发编程实践-笔记01"><a href="#Java并发编程实践-笔记01" class="headerlink" title="Java并发编程实践-笔记01"></a>Java并发编程实践-笔记01</h2><blockquote>
+<p>编写正确的程序很难，而编写正确的并发程序则难上加难。</p>
+</blockquote>
+<h4 id="为什么出现多进程或者多线程？"><a href="#为什么出现多进程或者多线程？" class="headerlink" title="为什么出现多进程或者多线程？"></a>为什么出现多进程或者多线程？</h4><ul>
+<li><strong>资源利用率</strong>：某些情况下，程序必须等待某个外部子操作执行完成，例如输入输出操作，而等待时程序无法执行其他工作；</li>
+<li><strong>公平性</strong>：不同用户和程序对于计算机上的资源有着同等的使用权；</li>
+<li><strong>便利性</strong>：通常来说，在计算多个任务时，应该编写多个程序，每个程序执行一个任务并在必要时相互通信；</li>
+</ul>
+<h4 id="线程的优势"><a href="#线程的优势" class="headerlink" title="线程的优势"></a>线程的优势</h4><ul>
+<li>发挥多处理器的强大能力</li>
+<li>建模的简单性</li>
+<li>异步事件的简化处理</li>
+<li>响应更灵敏的用户界面</li>
+</ul>
+<p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/04/10/tech-java-concurrency-in-practice-01/">http://www.thirteenyu.com/2018/04/10/tech-java-concurrency-in-practice-01/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>
+</div></article></div></section><footer><div class="paginator"><a href="/2018/04/11/tech-apue-process-communcation/" class="prev">上一篇</a><a href="/2018/04/09/tech-java-thread-safe-singleton/" class="next">下一篇</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'thirteenyu';
+var disqus_identifier = '2018/04/10/tech-java-concurrency-in-practice-01/';
+var disqus_title = 'Java并发编程实践-笔记01';
+var disqus_url = 'http://www.thirteenyu.com/2018/04/10/tech-java-concurrency-in-practice-01/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//thirteenyu.disqus.com/count.js" async></script><div class="copyright"><p>Hosted by <a href="https://pages.github.com">Github Pages</a> / <a href="https://pages.coding.me">Coding Pages</a></p><p>© 2010 - 2019 <a href="http://www.thirteenyu.com">Tobin</a>, unless otherwise noted.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script></body></html>

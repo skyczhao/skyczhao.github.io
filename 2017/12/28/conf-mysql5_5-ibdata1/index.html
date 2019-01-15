@@ -1,0 +1,62 @@
+<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> MySQL 5.5.45 数据文件过大优化 · 十三羽</title><meta name="description" content="MySQL 5.5.45 数据文件过大优化 - Tobin"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110577953-1"></script><script type="text/javascript">window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-110577953-1');</script></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/CV" target="_self" class="nav-list-link">CV</a></li><li class="nav-list-item"><a href="/about" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">MySQL 5.5.45 数据文件过大优化</h1><div class="post-info">Dec 28, 2017</div><div class="post-content"><p>相信不少人都遇到过，MySQL运行一段时间后，ibdata1的文件会增长特别大。即使把数据删掉，ibdata1也没有减少。长久以往，磁盘空间早晚会被用光。<br>背后是因为InnoDB表的数据被集中存储在共享表空间ibdata中。在MySQL&lt;=5.6.5，innodb_file_per_table默认为0，InnoDB表数据没有按表划分存储。而除此之外，ibdata还存储着数据字典、双写缓冲区、undo log等。<br>当innodb_file_per_table为0时，ibdata会不断增大，有时会导致磁盘空间不足。通常是InnoDB表的数据导致的，undo log是次要原因。因为undo log的增加通常是在事务较为繁忙的时候，且事务中做了大量的更新操作，但是undo log占用的空间却可以被重用。InnoDB的purge线程就是负责清理不需要的undo log空间以供其他的undo log使用。</p>
+<p>所以优化思路也就是：启用innodb_file_per_table。对于历史的数据表，需要重建才能使得配置生效。</p>
+<a id="more"></a>
+<h2 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h2><ol>
+<li>配置文件一般在<code>/etc/my.cnf</code>，如果没有可以自己建一个</li>
+<li>在<code>mysqld</code>分节内添加如下配置：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[mysqld]</span><br><span class="line">innodb_file_per_table</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="备份数据"><a href="#备份数据" class="headerlink" title="备份数据"></a>备份数据</h2><p><code>mysqldump -uroot -p -q --all-databases --single-transaction &gt; all-databases.sql</code></p>
+<h2 id="重建数据库"><a href="#重建数据库" class="headerlink" title="重建数据库"></a>重建数据库</h2><ol>
+<li>停机<ul>
+<li><code>/etc/init.d/mysql stop</code></li>
+</ul>
+</li>
+<li>备份，避免发生意外无法恢复<ul>
+<li><code>cd /var/lib/</code></li>
+<li><code>mv mysql mysql-backup</code></li>
+</ul>
+</li>
+<li>重新初始化数据库<ul>
+<li><code>/usr/bin/mysql_install_db</code></li>
+</ul>
+</li>
+<li>修改权限，否则启动会失败<ul>
+<li><code>chmod 755 mysql</code></li>
+<li><code>chown mysql:mysql -R mysql</code></li>
+</ul>
+</li>
+<li>启动<ul>
+<li><code>/etc/init.d/mysql start</code></li>
+</ul>
+</li>
+</ol>
+<h3 id="恢复数据"><a href="#恢复数据" class="headerlink" title="恢复数据"></a>恢复数据</h3><ol>
+<li>导入数据<ul>
+<li><code>mysql &lt; all-databases.sql</code></li>
+</ul>
+</li>
+<li>恢复权限<ul>
+<li><code>mysql -uroot</code></li>
+<li><code>flush privileges;</code></li>
+</ul>
+</li>
+</ol>
+<h3 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h3><p>如果想要修改mysql默认数据存储地址，可以：</p>
+<ol>
+<li>修改<code>/etc/init.d/mysql</code>中的<code>datadir=</code></li>
+<li>修改<code>/etc/my.cnf</code>，添加<code>datadir</code></li>
+</ol>
+<p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2017/12/28/conf-mysql5_5-ibdata1/">http://www.thirteenyu.com/2017/12/28/conf-mysql5_5-ibdata1/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>
+</div></article></div></section><footer><div class="paginator"><a href="/2018/04/08/chat-wechat-with-game/" class="prev">上一篇</a><a href="/2017/10/20/conf-opencv-with-android/" class="next">下一篇</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'thirteenyu';
+var disqus_identifier = '2017/12/28/conf-mysql5_5-ibdata1/';
+var disqus_title = 'MySQL 5.5.45 数据文件过大优化';
+var disqus_url = 'http://www.thirteenyu.com/2017/12/28/conf-mysql5_5-ibdata1/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//thirteenyu.disqus.com/count.js" async></script><div class="copyright"><p>Hosted by <a href="https://pages.github.com">Github Pages</a> / <a href="https://pages.coding.me">Coding Pages</a></p><p>© 2010 - 2019 <a href="http://www.thirteenyu.com">Tobin</a>, unless otherwise noted.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script></body></html>

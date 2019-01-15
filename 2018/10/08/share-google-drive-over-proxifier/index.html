@@ -1,0 +1,44 @@
+<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 通过Proxifier代理Google Backup and Sync · 十三羽</title><meta name="description" content="通过Proxifier代理Google Backup and Sync - Tobin"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110577953-1"></script><script type="text/javascript">window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-110577953-1');</script></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/CV" target="_self" class="nav-list-link">CV</a></li><li class="nav-list-item"><a href="/about" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">通过Proxifier代理Google Backup and Sync</h1><div class="post-info">Oct 8, 2018</div><div class="post-content"><p><a href="https://www.proxifier.com/" target="_blank" rel="noopener">Proxifier</a> 作为一款网络代理软件，可以针对某一款软件设置特定代理规则。</p>
+<ul>
+<li>Proxies 用来添加代理服务器，可以添加 proxy chains 用来均衡负载。</li>
+<li>Rules 即 设置规则，为某一款软件的或某一网址进行配置，如果手动配置，记得把shadowsocks 之类的代理软件设置为直连，避免代理无限循环。</li>
+<li>DNS 建议选择使用 Resolve hostnames through proxy , 即使用代理服务器的DNS，避免 DNS 污染。</li>
+</ul>
+<p><a href="https://www.google.com/drive/download/backup-and-sync/" target="_blank" rel="noopener">Backup and Sync from Google</a> 是谷歌官方Drive数据同步工具。众所周知的原因，Google 的服务在国内都是屏蔽的。</p>
+<p>在国内，即使开了ShadowSocks全局代理，Backup and Sync 依然会报下面的错误信息：</p>
+<blockquote>
+<p>google photo backup there was a problem to authorization，google drive unable to connect mac</p>
+</blockquote>
+<p>原因是这里Backup and Sync不支持上层的http、sock代理，如果使用需要在 tcp层面进行代理。这时候Proxifier就出派上用场了。</p>
+<a id="more"></a>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
+<li><p>Proxifier下载安装</p>
+<ul>
+<li>官网下载就可以：<a href="https://www.proxifier.com/" target="_blank" rel="noopener">https://www.proxifier.com/</a></li>
+<li>此处分享几个验证码，仅供测试：注册码不通用，注册用户名任意。   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">L6Z8A-XY2J4-BTZ3P-ZZ7DF-A2Q9C (Portable Edition)</span><br><span class="line">5EZ8G-C3WL5-B56YG-SCXM9-6QZAP (Standard Edition)</span><br><span class="line">P427L-9Y552-5433E-8DSR3-58Z68 (MAC)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>配置规则</p>
+<ul>
+<li>添加Backup and Sync的App，并指向本地的ShadowSocks端口<br><img src="/2018/10/08/share-google-drive-over-proxifier/rules.png" alt="" width="500" height="270"></li>
+</ul>
+</li>
+</ol>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ol>
+<li>使用 Proxifier, 为Google Drive 的 Backup &amp; Sync 进行代理：<a href="https://blog.batesma.com/20170811-google-drive-proxy-solved/" target="_blank" rel="noopener">https://blog.batesma.com/20170811-google-drive-proxy-solved/</a></li>
+<li>使用 Proxifier 解决 Google photo backup/Google drive mac 无法连接错误：<a href="http://www.ixirong.com/2016/11/08/fix-google-photo-problem-by-proxifer-and-shadowsocks/" target="_blank" rel="noopener">http://www.ixirong.com/2016/11/08/fix-google-photo-problem-by-proxifer-and-shadowsocks/</a></li>
+</ol>
+<p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/10/08/share-google-drive-over-proxifier/">http://www.thirteenyu.com/2018/10/08/share-google-drive-over-proxifier/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>
+</div></article></div></section><footer><div class="paginator"><a href="/2018/11/18/share-pmp-overview/" class="prev">上一篇</a><a href="/2018/09/16/tech-android-1/" class="next">下一篇</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'thirteenyu';
+var disqus_identifier = '2018/10/08/share-google-drive-over-proxifier/';
+var disqus_title = '通过Proxifier代理Google Backup and Sync';
+var disqus_url = 'http://www.thirteenyu.com/2018/10/08/share-google-drive-over-proxifier/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//thirteenyu.disqus.com/count.js" async></script><div class="copyright"><p>Hosted by <a href="https://pages.github.com">Github Pages</a> / <a href="https://pages.coding.me">Coding Pages</a></p><p>© 2010 - 2019 <a href="http://www.thirteenyu.com">Tobin</a>, unless otherwise noted.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script></body></html>

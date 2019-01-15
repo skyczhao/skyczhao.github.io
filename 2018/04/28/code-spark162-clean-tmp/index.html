@@ -1,0 +1,61 @@
+<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Spark 1.6.2 清理临时文件 · 十三羽</title><meta name="description" content="Spark 1.6.2 清理临时文件 - Tobin"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110577953-1"></script><script type="text/javascript">window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-110577953-1');</script></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/CV" target="_self" class="nav-list-link">CV</a></li><li class="nav-list-item"><a href="/about" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">Spark 1.6.2 清理临时文件</h1><div class="post-info">Apr 28, 2018</div><div class="post-content"><p>写这篇之时，实际已经隔了好多天没更新。当时只留了个开头，就没有写下去。</p>
+<p>现在也是抽空趁机把几篇同时更新。最近也是事多，工作上、生活上都或多或少产生一些问题。这个五一其实过得蛮拧巴。</p>
+<p>不过写这件事情还是要坚持的。今天还翻看了耗子哥的博客-<a href="https://coolshell.cn/" target="_blank" rel="noopener">CoolShell</a>。像耗子哥这般能持续输出有深度有硬实力的硬文，是自己学习的典范。自己的写作还是过多水分和稀释了，缺乏真正的见解，不过有些经验还是得长久积累才有几乎写出来对不。</p>
+<p>下面是这段时间写Spark时候遇到的一个问题总结，内容不深但是供参考。</p>
+<a id="more"></a>
+<h2 id="问题状况"><a href="#问题状况" class="headerlink" title="问题状况"></a>问题状况</h2><p>系统的磁盘被占满，导致系统上安装的Hadoop组件部分退出，以致集群某些服务不可用。</p>
+<h2 id="定位原因"><a href="#定位原因" class="headerlink" title="定位原因"></a>定位原因</h2><blockquote>
+<p>Spark本地临时目录没有清理</p>
+</blockquote>
+<ol>
+<li>观察目录使用情况，发现<code>/tmp</code>使用过多</li>
+<li>对<code>/tmp</code>下目录查看，发现以<code>spark-*</code>开头的文件夹空间占用很大<br><img src="/2018/04/28/code-spark162-clean-tmp/spark162-ct-01.png" alt="" width="370" height="37"></li>
+<li>深入查看发现都为同一个项目的jar包</li>
+</ol>
+<h2 id="原理探究-待考证"><a href="#原理探究-待考证" class="headerlink" title="原理探究(待考证)"></a>原理探究(待考证)</h2><blockquote>
+<p>估计是主进程常驻，JavaSparkContext没有清理的原因</p>
+</blockquote>
+<ol>
+<li>起spark任务的主进程cron进程，常驻并定时调度起spark</li>
+<li>虽然spark context使用完后close，但主进程没有退出，spark context清理不完整</li>
+</ol>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>关闭spark context的时候，同时主动调用清理临时目录的代码：</p>
+<pre><code class="java"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">clearTmpDirs</span><span class="params">()</span> </span>{
+    <span class="keyword">try</span> {
+        logger.info(<span class="string">"clear Utils's localRootDirs"</span>);
+        <span class="keyword">synchronized</span> (Utils$.MODULE$) {
+            Utils$.MODULE$.clearLocalRootDirs();
+        }
+        logger.info(<span class="string">"deleting ShutdownHookManager's shutdownDeletePaths"</span>);
+        Field field = ShutdownHookManager$.MODULE$.getClass()
+                .getDeclaredField(<span class="string">"org$apache$spark$util$ShutdownHookManager$$shutdownDeletePaths"</span>);
+        field.setAccessible(<span class="keyword">true</span>);
+        scala.collection.mutable.HashSet shutdownDeletePaths =
+                (scala.collection.mutable.HashSet) field.get(ShutdownHookManager$.MODULE$);
+        <span class="keyword">synchronized</span> (shutdownDeletePaths) {
+            Set&lt;String&gt; dirPaths = <span class="keyword">new</span> HashSet&lt;&gt;(JavaConversions.asJavaSet(shutdownDeletePaths));
+            <span class="keyword">for</span> (String dir : dirPaths) {
+                File dirPath = <span class="keyword">new</span> File(dir);
+                logger.info(<span class="string">"deleting Directory - "</span> + dirPath);
+                Utils.deleteRecursively(dirPath);
+                ShutdownHookManager.removeShutdownDeleteDir(dirPath);
+            }
+        }
+    } <span class="keyword">catch</span> (Exception e) {
+        logger.warn(<span class="string">"get ShutdownHookManager's shutdownDeletePaths failed"</span>, e);
+    }
+}
+</code></pre>
+<p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/04/28/code-spark162-clean-tmp/">http://www.thirteenyu.com/2018/04/28/code-spark162-clean-tmp/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>
+</div></article></div></section><footer><div class="paginator"><a href="/2018/05/05/tech-crack-wechat-verify-code/" class="prev">上一篇</a><a href="/2018/04/27/conf-vscode-indoor/" class="next">下一篇</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'thirteenyu';
+var disqus_identifier = '2018/04/28/code-spark162-clean-tmp/';
+var disqus_title = 'Spark 1.6.2 清理临时文件';
+var disqus_url = 'http://www.thirteenyu.com/2018/04/28/code-spark162-clean-tmp/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//thirteenyu.disqus.com/count.js" async></script><div class="copyright"><p>Hosted by <a href="https://pages.github.com">Github Pages</a> / <a href="https://pages.coding.me">Coding Pages</a></p><p>© 2010 - 2019 <a href="http://www.thirteenyu.com">Tobin</a>, unless otherwise noted.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script></body></html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Android OpenCV开发环境配置 · 十三羽</title><meta name="description" content="Android OpenCV开发环境配置 - Tobin"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110577953-1"></script><script type="text/javascript">window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-110577953-1');</script></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/CV" target="_self" class="nav-list-link">CV</a></li><li class="nav-list-item"><a href="/about" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">Android OpenCV开发环境配置</h1><div class="post-info">Oct 20, 2017</div><div class="post-content"><blockquote>
+<p>主要参考文档：<a href="https://docs.opencv.org/master/d5/df8/tutorial_dev_with_OCV_on_Android.html" target="_blank" rel="noopener">https://docs.opencv.org/master/d5/df8/tutorial_dev_with_OCV_on_Android.html</a></p>
+</blockquote>
+<ol>
+<li>从<a href="OpenCV.org">OpenCV.org</a>下载最新版 “OpenCV sdk for Android”，并解压</li>
+<li>在Android Studio中导入OpenCV：<ul>
+<li><code>From File -&gt; New -&gt; Import Module</code></li>
+<li>选择<code>sdk/java</code>目录</li>
+</ul>
+</li>
+<li>更新导入的OpenCV模块中的<code>build.gradle</code>文件，以适配原项目的<code>build.gradle</code> <ul>
+<li>compileSdkVersion </li>
+<li>buildToolsVersion </li>
+<li>minSdkVersion</li>
+<li>targetSdkVersion.</li>
+</ul>
+</li>
+<li>添加依赖模块：<ul>
+<li>官方方式<ul>
+<li><code>Application -&gt; Module Settings</code>，选择<code>Dependencies</code>子页</li>
+<li>点击底部<code>+</code>，选择<code>Module Dependency</code>，并导入<code>OpenCV</code>模块</li>
+</ul>
+</li>
+<li>博主的方式<ul>
+<li>ROOT/app/build.gradle<ul>
+<li><code>compile project(&#39;:opencv’)</code></li>
+</ul>
+</li>
+<li>ROOT/settings.gradle 需要把导入后的项目另存<ul>
+<li><code>include &#39;:opencv&#39;</code></li>
+<li><code>project(&#39;:opencv&#39;).projectDir = new File(&#39;/Users/Programs/dt-flyingpig-opencv&#39;)</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>导入OpenCV的库文件</p>
+<ul>
+<li>官方方式<ul>
+<li>把OpenCV的库文件（<code>sdk/native</code>）放到<code>Android Studio</code>的<code>app/src/main</code>下</li>
+</ul>
+</li>
+<li><p>博主的方式</p>
+<ul>
+<li><p>ROOT/app/build.gradle</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sourceSets &#123;</span><br><span class="line">    main &#123;</span><br><span class="line">        jniLibs.srcDirs += [rootProject.ext.opencv.sdk + &apos;/sdk/native/libs&apos;]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>ROOT/build.gradle</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ext &#123;</span><br><span class="line">    opencv = [</span><br><span class="line">            sdk: &apos;/Users/tobin/ProgramFiles/OpenCV-android-sdk&apos;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>在Android Studio中，重命名复制的库文件目录为<code>jniLibs</code>，即完成</p>
+</li>
+</ol>
+<p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2017/10/20/conf-opencv-with-android/">http://www.thirteenyu.com/2017/10/20/conf-opencv-with-android/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>
+</div></article></div></section><footer><div class="paginator"><a href="/2017/12/28/conf-mysql5_5-ibdata1/" class="prev">上一篇</a><a href="/2017/10/03/list-goods/" class="next">下一篇</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'thirteenyu';
+var disqus_identifier = '2017/10/20/conf-opencv-with-android/';
+var disqus_title = 'Android OpenCV开发环境配置';
+var disqus_url = 'http://www.thirteenyu.com/2017/10/20/conf-opencv-with-android/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//thirteenyu.disqus.com/count.js" async></script><div class="copyright"><p>Hosted by <a href="https://pages.github.com">Github Pages</a> / <a href="https://pages.coding.me">Coding Pages</a></p><p>© 2010 - 2019 <a href="http://www.thirteenyu.com">Tobin</a>, unless otherwise noted.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script></body></html>

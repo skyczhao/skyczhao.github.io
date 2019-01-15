@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 常见gitpages设置 · 十三羽</title><meta name="description" content="常见gitpages设置 - Tobin"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110577953-1"></script><script type="text/javascript">window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-110577953-1');</script></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/CV" target="_self" class="nav-list-link">CV</a></li><li class="nav-list-item"><a href="/about" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">常见gitpages设置</h1><div class="post-info">Oct 31, 2015</div><div class="post-content"><h2 id="github"><a href="#github" class="headerlink" title="github"></a><a href="https://github.com/" target="_blank" rel="noopener">github</a></h2><ol>
+<li>创建一个以用户名命名的仓库<ul>
+<li>新建仓库，属性为public，命名：[username].github.io，例如：skyczhao.github.io</li>
+<li>这个仓库master分支会被直接用于页面显示</li>
+<li>创建完仓库后，github会自动分配一个子域名：[username].github.io，目前来说还是不可以访问的</li>
+</ul>
+</li>
+<li>往仓库master分支添加页面<ul>
+<li>添加一个index.html的页面<ul>
+<li>此处为了测试，写了个简单的页面</li>
+<li>文件名：index.html</li>
+<li>源码：<code>&lt;h1&gt;Hello, [username]!&lt;/h1&gt;</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>打开主页<ul>
+<li>[username].github.io</li>
+</ul>
+</li>
+</ol>
+<h3 id="绑定域名-可选项"><a href="#绑定域名-可选项" class="headerlink" title="绑定域名(可选项)"></a>绑定域名(可选项)</h3><ol>
+<li>先要有个域名<ul>
+<li>可以在<a href="https://www.godaddy.com" target="_blank" rel="noopener">godaddy</a>、<a href="http://wanwang.aliyun.com/" target="_blank" rel="noopener">万网</a>等地方注册</li>
+<li>个人建议不要找小型网站注册</li>
+</ul>
+</li>
+<li>添加域名解析<ul>
+<li>进入到域名解析修改的页面</li>
+<li>添加CNAME解析(如果是直接用IP地址，就改成A解析)</li>
+<li>主机记录为www或者@，分别对应带www以及不带www的域名(以<a href="http://www.example.com为例，www对应的是www.example.com，@对应的是example.com" target="_blank" rel="noopener">www.example.com为例，www对应的是www.example.com，@对应的是example.com</a>)</li>
+<li>记录值填刚刚的地址：[username].github.io</li>
+</ul>
+</li>
+</ol>
+<h2 id="gitcafe"><a href="#gitcafe" class="headerlink" title="gitcafe"></a><a href="https://gitcafe.com/" target="_blank" rel="noopener">gitcafe</a></h2><ol>
+<li>创建一个以用户名命名的仓库<ul>
+<li>直接以用户名为命名即可，命名：[username]</li>
+<li>与github不同，这里用于显示的分支为：gitcafe-pages</li>
+<li>分配的子域名为：[username].gitcafe.io</li>
+</ul>
+</li>
+<li>往仓库的gitcafe-pages分支添加页面</li>
+<li>打开主页<ul>
+<li>[username].gitcafe.io</li>
+</ul>
+</li>
+</ol>
+<h3 id="绑定域名-可选项-1"><a href="#绑定域名-可选项-1" class="headerlink" title="绑定域名(可选项)"></a>绑定域名(可选项)</h3><ol>
+<li>大体设置差不多</li>
+<li>记录值改为：gitcafe.io</li>
+</ol>
+<h2 id="coding"><a href="#coding" class="headerlink" title="coding"></a><a href="https://coding.net" target="_blank" rel="noopener">coding</a></h2><ol>
+<li>创建一个以用户名命名的仓库</li>
+<li>往默认的<code>coding-pages</code>分支添加index.html</li>
+<li>在项目设置中，找到pages，启动服务</li>
+<li>打开主页<ul>
+<li>[username].coding.me</li>
+</ul>
+</li>
+</ol>
+<p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2015/10/31/conf-gitpages/">http://www.thirteenyu.com/2015/10/31/conf-gitpages/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>
+</div></article></div></section><footer><div class="paginator"><a href="/2016/01/05/hive-udf/" class="prev">上一篇</a><a href="/2015/05/07/todo-ecpp/" class="next">下一篇</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'thirteenyu';
+var disqus_identifier = '2015/10/31/conf-gitpages/';
+var disqus_title = '常见gitpages设置';
+var disqus_url = 'http://www.thirteenyu.com/2015/10/31/conf-gitpages/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//thirteenyu.disqus.com/count.js" async></script><div class="copyright"><p>Hosted by <a href="https://pages.github.com">Github Pages</a> / <a href="https://pages.coding.me">Coding Pages</a></p><p>© 2010 - 2019 <a href="http://www.thirteenyu.com">Tobin</a>, unless otherwise noted.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script></body></html>

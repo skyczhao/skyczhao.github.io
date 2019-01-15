@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 在Webstorm中写hexo · 十三羽</title><meta name="description" content="在Webstorm中写hexo - Tobin"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110577953-1"></script><script type="text/javascript">window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-110577953-1');</script></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/CV" target="_self" class="nav-list-link">CV</a></li><li class="nav-list-item"><a href="/about" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">在Webstorm中写hexo</h1><div class="post-info">Sep 16, 2018</div><div class="post-content"><p>博客是hexo搞的，感觉还蛮干净清新的。<br>这里分享下博主写博客的配置。</p>
+<p><img src="/2018/09/16/conf-hexo-webstorm-opt/1.png" alt="" width="" height=""></p>
+<ul>
+<li>Editor -&gt; File and Code Templates<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">title: $&#123;title&#125;</span><br><span class="line">date: $&#123;YEAR&#125;-$&#123;MONTH&#125;-$&#123;DAY&#125; $&#123;HOUR&#125;:$&#123;MINUTE&#125;:$&#123;SECOND&#125;</span><br><span class="line">desc: $&#123;description&#125;</span><br><span class="line">tags: [$&#123;tags&#125;] </span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<a id="more"></a>
+<p>主要的配置就是上面这个，对markdown文件的模板。<br>hexo其实也可以在命令行创建新的博文md，但是总是不太舒服。该短横线的会换成下划线，title也总是要自己建立了md之后手动改。不像英文，文件名和标题名保持一致就好了。<br>使用时注意新建博文时采用markdown的模板。会弹出个框，让你填好内容，生成文件。<br><img src="/2018/09/16/conf-hexo-webstorm-opt/2.png" alt="" width="460" height="220"></p>
+<p>然后就是用<code>nvm</code>管理node的版本的。也是hexo推荐的方式。</p>
+<p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/09/16/conf-hexo-webstorm-opt/">http://www.thirteenyu.com/2018/09/16/conf-hexo-webstorm-opt/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>
+</div></article></div></section><footer><div class="paginator"><a href="/2018/09/16/tech-android-1/" class="prev">上一篇</a><a href="/2018/05/20/tech-personal-tool-plan/" class="next">下一篇</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'thirteenyu';
+var disqus_identifier = '2018/09/16/conf-hexo-webstorm-opt/';
+var disqus_title = '在Webstorm中写hexo';
+var disqus_url = 'http://www.thirteenyu.com/2018/09/16/conf-hexo-webstorm-opt/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//thirteenyu.disqus.com/count.js" async></script><div class="copyright"><p>Hosted by <a href="https://pages.github.com">Github Pages</a> / <a href="https://pages.coding.me">Coding Pages</a></p><p>© 2010 - 2019 <a href="http://www.thirteenyu.com">Tobin</a>, unless otherwise noted.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script></body></html>

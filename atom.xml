@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>十三羽</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://www.thirteenyu.com/"/>
+  <updated>2019-01-15T18:39:39.887Z</updated>
+  <id>http://www.thirteenyu.com/</id>
+  
+  <author>
+    <name>Tobin</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PMP备考-前三章</title>
+    <link href="http://www.thirteenyu.com/2018/11/19/share-pmp-pre3/"/>
+    <id>http://www.thirteenyu.com/2018/11/19/share-pmp-pre3/</id>
+    <published>2018-11-18T18:28:25.000Z</published>
+    <updated>2019-01-15T18:39:39.887Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/2018/11/19/share-pmp-pre3/pmbok-pre3.svg" alt="" width="1000" height="750"></p><a id="more"></a><p>请右键新窗口打开图片。为了格式美观，本页只显示小图。原图为SVG格式，支持放大。</p><p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/11/19/share-pmp-pre3/">http://www.thirteenyu.com/2018/11/19/share-pmp-pre3/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/2018/11/19/share-pmp-pre3/pmbok-pre3.svg&quot; alt=&quot;&quot; width=&quot;1000&quot; height=&quot;750&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="PMP" scheme="http://www.thirteenyu.com/tags/PMP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PMP备考-总览</title>
+    <link href="http://www.thirteenyu.com/2018/11/18/share-pmp-overview/"/>
+    <id>http://www.thirteenyu.com/2018/11/18/share-pmp-overview/</id>
+    <published>2018-11-17T18:21:18.000Z</published>
+    <updated>2018-12-18T18:00:46.856Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="49个过程"><a href="#49个过程" class="headerlink" title="49个过程"></a>49个过程</h2><table><thead><tr><th style="text-align:center"></th><th style="text-align:left">启动过程组</th><th style="text-align:left">规划过程组</th><th style="text-align:left">执行过程组</th><th style="text-align:left">监督过程组</th><th style="text-align:left">收尾过程组</th><th style="text-align:center">知识点总结</th></tr></thead><tbody><tr><td style="text-align:center">项目整合管理</td><td style="text-align:left">1.制定项目章程</td><td style="text-align:left">2.规划项目管理计划</td><td style="text-align:left">3.指导与管理项目工作<br>4.管理项目知识</td><td style="text-align:left">5.监控项目工作<br>6.实施整体变更控制</td><td style="text-align:left">7.结束项目或阶段</td><td style="text-align:center">项目章程<br>整体变更控制过程<br>结束项目或阶段</td></tr><tr><td style="text-align:center">项目范围管理</td><td style="text-align:left"></td><td style="text-align:left">1.规划范围管理<br>2.收集需求<br>3.定义范围<br>4.创建WBS</td><td style="text-align:left"></td><td style="text-align:left">5.确认范围<br>6.控制范围</td><td style="text-align:left"></td><td style="text-align:center">做且仅做<br>WBS</td></tr><tr><td style="text-align:center">项目进度管理</td><td style="text-align:left"></td><td style="text-align:left">1.规划进度管理<br>2.定义活动<br>3.排列活动顺序<br>4.估算活动持续时间<br>5.制定进度计划</td><td style="text-align:left"></td><td style="text-align:left">6.控制进度</td><td style="text-align:left"></td><td style="text-align:center">按时完成<br>进度网络图</td></tr><tr><td style="text-align:center">项目成本管理</td><td style="text-align:left"></td><td style="text-align:left">1.规划成本管理<br>2.估算成本<br>3.制定预算</td><td style="text-align:left"></td><td style="text-align:left">4.控制成本</td><td style="text-align:left"></td><td style="text-align:center">预算内<br>挣值分析</td></tr><tr><td style="text-align:center">项目质量管理</td><td style="text-align:left"></td><td style="text-align:left">1.规划质量管理</td><td style="text-align:left">2.管理质量</td><td style="text-align:left">3.控制质量</td><td style="text-align:left"></td><td style="text-align:center">满足目标<br>定指标、提高、改错<br>7种质量管理工具</td></tr><tr><td style="text-align:center">项目资源管理</td><td style="text-align:left"></td><td style="text-align:left">1.规划资源管理<br>2.估算活动资源</td><td style="text-align:left">3.获取资源<br>4.建设团队<br>5.管理团队</td><td style="text-align:left">6.控制资源</td><td style="text-align:left"></td><td style="text-align:center">识别、获取、管理<br>责任分配矩阵(RAM,RACI)<br>冲突管理5个方法<br>塔克曼阶梯理论</td></tr><tr><td style="text-align:center">项目沟通管理</td><td style="text-align:left"></td><td style="text-align:left">1.规划沟通管理</td><td style="text-align:left">2.管理沟通</td><td style="text-align:left">3.监督沟通</td><td style="text-align:left"></td><td style="text-align:center">项目信息<br>沟通方法<br>项目沟通记录<br>相关方参与度评估矩阵</td></tr><tr><td style="text-align:center">项目风险管理</td><td style="text-align:left"></td><td style="text-align:left">1.规划风险管理<br>2.识别风险<br>3.实施定性分析<br>4.实施定量分析<br>5.规划风险应对</td><td style="text-align:left">6.实施风险应对</td><td style="text-align:left">7.监督风险</td><td style="text-align:left"></td><td style="text-align:center">概率、影响<br>概率-影响矩阵<br>SWOT、模拟、决策树<br>应对方式</td></tr><tr><td style="text-align:center">项目采购管理</td><td style="text-align:left"></td><td style="text-align:left">1.规划采购管理</td><td style="text-align:left">2.实施采购</td><td style="text-align:left">3.控制采购</td><td style="text-align:left"></td><td style="text-align:center">外部采购<br>合同类型<br>独立成本估算<br>绩效审查、绩效审计</td></tr><tr><td style="text-align:center">项目相关方管理</td><td style="text-align:left">1.识别相关方</td><td style="text-align:left">2.规划相关方参与</td><td style="text-align:left">3.管理相关方参与</td><td style="text-align:left">4.监督相关方参与</td><td style="text-align:left"></td><td style="text-align:center">合理参与<br>权力-利益方格<br>相关方参与度评估矩阵</td></tr></tbody></table><a id="more"></a><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ol><li>3种核心工具<ul><li>WBS</li><li>网络图</li><li>挣值分析</li></ul></li><li>技能分类<ul><li>硬技能：事</li><li>软技能：人（资源管理、沟通管理、相关方管理）</li></ul></li><li>方法论<ul><li>笛卡尔方法论：定位问题 -&gt; 分解问题 -&gt; 解决问题 -&gt; 整合解决方案</li><li>系统论：优化”整合”</li></ul></li></ol><p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/11/18/share-pmp-overview/">http://www.thirteenyu.com/2018/11/18/share-pmp-overview/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;49个过程&quot;&gt;&lt;a href=&quot;#49个过程&quot; class=&quot;headerlink&quot; title=&quot;49个过程&quot;&gt;&lt;/a&gt;49个过程&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;&lt;/th&gt;
+&lt;th style=&quot;text-align:left&quot;&gt;启动过程组&lt;/th&gt;
+&lt;th style=&quot;text-align:left&quot;&gt;规划过程组&lt;/th&gt;
+&lt;th style=&quot;text-align:left&quot;&gt;执行过程组&lt;/th&gt;
+&lt;th style=&quot;text-align:left&quot;&gt;监督过程组&lt;/th&gt;
+&lt;th style=&quot;text-align:left&quot;&gt;收尾过程组&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;知识点总结&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;项目整合管理&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;1.制定项目章程&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;2.规划项目管理计划&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;3.指导与管理项目工作&lt;br&gt;4.管理项目知识&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;5.监控项目工作&lt;br&gt;6.实施整体变更控制&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;7.结束项目或阶段&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;项目章程&lt;br&gt;整体变更控制过程&lt;br&gt;结束项目或阶段&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;项目范围管理&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;1.规划范围管理&lt;br&gt;2.收集需求&lt;br&gt;3.定义范围&lt;br&gt;4.创建WBS&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;5.确认范围&lt;br&gt;6.控制范围&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;做且仅做&lt;br&gt;WBS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;项目进度管理&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;1.规划进度管理&lt;br&gt;2.定义活动&lt;br&gt;3.排列活动顺序&lt;br&gt;4.估算活动持续时间&lt;br&gt;5.制定进度计划&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;6.控制进度&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;按时完成&lt;br&gt;进度网络图&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;项目成本管理&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;1.规划成本管理&lt;br&gt;2.估算成本&lt;br&gt;3.制定预算&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;4.控制成本&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;预算内&lt;br&gt;挣值分析&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;项目质量管理&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;1.规划质量管理&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;2.管理质量&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;3.控制质量&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;满足目标&lt;br&gt;定指标、提高、改错&lt;br&gt;7种质量管理工具&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;项目资源管理&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;1.规划资源管理&lt;br&gt;2.估算活动资源&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;3.获取资源&lt;br&gt;4.建设团队&lt;br&gt;5.管理团队&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;6.控制资源&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;识别、获取、管理&lt;br&gt;责任分配矩阵(RAM,RACI)&lt;br&gt;冲突管理5个方法&lt;br&gt;塔克曼阶梯理论&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;项目沟通管理&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;1.规划沟通管理&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;2.管理沟通&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;3.监督沟通&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;项目信息&lt;br&gt;沟通方法&lt;br&gt;项目沟通记录&lt;br&gt;相关方参与度评估矩阵&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;项目风险管理&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;1.规划风险管理&lt;br&gt;2.识别风险&lt;br&gt;3.实施定性分析&lt;br&gt;4.实施定量分析&lt;br&gt;5.规划风险应对&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;6.实施风险应对&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;7.监督风险&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;概率、影响&lt;br&gt;概率-影响矩阵&lt;br&gt;SWOT、模拟、决策树&lt;br&gt;应对方式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;项目采购管理&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;1.规划采购管理&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;2.实施采购&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;3.控制采购&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;外部采购&lt;br&gt;合同类型&lt;br&gt;独立成本估算&lt;br&gt;绩效审查、绩效审计&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;项目相关方管理&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;1.识别相关方&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;2.规划相关方参与&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;3.管理相关方参与&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;4.监督相关方参与&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;合理参与&lt;br&gt;权力-利益方格&lt;br&gt;相关方参与度评估矩阵&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+    
+    </summary>
+    
+    
+      <category term="PMP" scheme="http://www.thirteenyu.com/tags/PMP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>通过Proxifier代理Google Backup and Sync</title>
+    <link href="http://www.thirteenyu.com/2018/10/08/share-google-drive-over-proxifier/"/>
+    <id>http://www.thirteenyu.com/2018/10/08/share-google-drive-over-proxifier/</id>
+    <published>2018-10-08T10:45:59.000Z</published>
+    <updated>2018-12-16T17:19:50.829Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://www.proxifier.com/" target="_blank" rel="noopener">Proxifier</a> 作为一款网络代理软件，可以针对某一款软件设置特定代理规则。</p><ul><li>Proxies 用来添加代理服务器，可以添加 proxy chains 用来均衡负载。</li><li>Rules 即 设置规则，为某一款软件的或某一网址进行配置，如果手动配置，记得把shadowsocks 之类的代理软件设置为直连，避免代理无限循环。</li><li>DNS 建议选择使用 Resolve hostnames through proxy , 即使用代理服务器的DNS，避免 DNS 污染。</li></ul><p><a href="https://www.google.com/drive/download/backup-and-sync/" target="_blank" rel="noopener">Backup and Sync from Google</a> 是谷歌官方Drive数据同步工具。众所周知的原因，Google 的服务在国内都是屏蔽的。</p><p>在国内，即使开了ShadowSocks全局代理，Backup and Sync 依然会报下面的错误信息：</p><blockquote><p>google photo backup there was a problem to authorization，google drive unable to connect mac</p></blockquote><p>原因是这里Backup and Sync不支持上层的http、sock代理，如果使用需要在 tcp层面进行代理。这时候Proxifier就出派上用场了。</p><a id="more"></a><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol><li><p>Proxifier下载安装</p><ul><li>官网下载就可以：<a href="https://www.proxifier.com/" target="_blank" rel="noopener">https://www.proxifier.com/</a></li><li>此处分享几个验证码，仅供测试：注册码不通用，注册用户名任意。   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">L6Z8A-XY2J4-BTZ3P-ZZ7DF-A2Q9C (Portable Edition)</span><br><span class="line">5EZ8G-C3WL5-B56YG-SCXM9-6QZAP (Standard Edition)</span><br><span class="line">P427L-9Y552-5433E-8DSR3-58Z68 (MAC)</span><br></pre></td></tr></table></figure></li></ul></li><li><p>配置规则</p><ul><li>添加Backup and Sync的App，并指向本地的ShadowSocks端口<br><img src="/2018/10/08/share-google-drive-over-proxifier/rules.png" alt="" width="500" height="270"></li></ul></li></ol><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ol><li>使用 Proxifier, 为Google Drive 的 Backup &amp; Sync 进行代理：<a href="https://blog.batesma.com/20170811-google-drive-proxy-solved/" target="_blank" rel="noopener">https://blog.batesma.com/20170811-google-drive-proxy-solved/</a></li><li>使用 Proxifier 解决 Google photo backup/Google drive mac 无法连接错误：<a href="http://www.ixirong.com/2016/11/08/fix-google-photo-problem-by-proxifer-and-shadowsocks/" target="_blank" rel="noopener">http://www.ixirong.com/2016/11/08/fix-google-photo-problem-by-proxifer-and-shadowsocks/</a></li></ol><p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/10/08/share-google-drive-over-proxifier/">http://www.thirteenyu.com/2018/10/08/share-google-drive-over-proxifier/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://www.proxifier.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Proxifier&lt;/a&gt; 作为一款网络代理软件，可以针对某一款软件设置特定代理规则。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Proxies 用来添加代理服务器，可以添加 proxy chains 用来均衡负载。&lt;/li&gt;
+&lt;li&gt;Rules 即 设置规则，为某一款软件的或某一网址进行配置，如果手动配置，记得把shadowsocks 之类的代理软件设置为直连，避免代理无限循环。&lt;/li&gt;
+&lt;li&gt;DNS 建议选择使用 Resolve hostnames through proxy , 即使用代理服务器的DNS，避免 DNS 污染。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.google.com/drive/download/backup-and-sync/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Backup and Sync from Google&lt;/a&gt; 是谷歌官方Drive数据同步工具。众所周知的原因，Google 的服务在国内都是屏蔽的。&lt;/p&gt;
+&lt;p&gt;在国内，即使开了ShadowSocks全局代理，Backup and Sync 依然会报下面的错误信息：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;google photo backup there was a problem to authorization，google drive unable to connect mac&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;原因是这里Backup and Sync不支持上层的http、sock代理，如果使用需要在 tcp层面进行代理。这时候Proxifier就出派上用场了。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="分享" scheme="http://www.thirteenyu.com/tags/%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="黑科技" scheme="http://www.thirteenyu.com/tags/%E9%BB%91%E7%A7%91%E6%8A%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>0.Android开工</title>
+    <link href="http://www.thirteenyu.com/2018/09/16/tech-android-1/"/>
+    <id>http://www.thirteenyu.com/2018/09/16/tech-android-1/</id>
+    <published>2018-09-16T13:18:00.000Z</published>
+    <updated>2018-12-16T17:19:50.835Z</updated>
+    
+    <content type="html"><![CDATA[<p>这个补充下背景。<br>其实早前也做过一些安卓开发。是基于一个APP多开框架改的，自己加了脚本操作和验证码识别。<br>最近需要把验证码部分拿出来，但是却忘了怎么配置开发环境的。因为也个的比较久了。<br>所以就简单记录一下，当做开发笔记。<br>没啥技术的，看官看看就好。</p><h2 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h2><ol><li>File -&gt; New -&gt; New Project</li><li>API 23: Android 6.0</li></ol><a id="more"></a><h2 id="坑"><a href="#坑" class="headerlink" title="坑~"></a>坑~</h2><ol><li><p>小米卸载刚安装的App后就无法再调试了？报错~</p><ul><li><p>问题描述： </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Error while executing: am start -n &quot;com.thirteenyu.whathappen/com.thirteenyu.whathappen.MainActivity&quot; -a android.intent.action.MAIN -c android.intent.category.LAUNCHER</span><br><span class="line">Starting: Intent &#123; act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.thirteenyu.whathappen/.MainActivity &#125;</span><br><span class="line">Error type 3</span><br><span class="line">Error: Activity class &#123;com.thirteenyu.whathappen/com.thirteenyu.whathappen.MainActivity&#125; does not exist.</span><br><span class="line"></span><br><span class="line">Error while Launching activity</span><br></pre></td></tr></table></figure></li><li><p>解决：分身模式看看？是不是还有卸载了的APP？</p><ol><li>双重卸载真身与分身里面的APP：虽然麻烦，但有效</li><li>删除分身数据：看分身对你有没有用咯~ 但这个是最彻底的</li></ol></li></ul></li><li><p>OpenCV For Android</p><ul><li><p>问题描述：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Error: ... /Users/tobin/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64/bin/mips64el-linux-android-strip ...</span><br></pre></td></tr></table></figure></li><li><p>原因分析：OpenCV libs下带有mips、x86等，实际没啥用的库</p></li><li>解决：从lib删除这些libs，目前只保留：<code>arm64-v8a armeabi-v7a</code></li></ul></li></ol><p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/09/16/tech-android-1/">http://www.thirteenyu.com/2018/09/16/tech-android-1/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这个补充下背景。&lt;br&gt;其实早前也做过一些安卓开发。是基于一个APP多开框架改的，自己加了脚本操作和验证码识别。&lt;br&gt;最近需要把验证码部分拿出来，但是却忘了怎么配置开发环境的。因为也个的比较久了。&lt;br&gt;所以就简单记录一下，当做开发笔记。&lt;br&gt;没啥技术的，看官看看就好。&lt;/p&gt;
+&lt;h2 id=&quot;创建项目&quot;&gt;&lt;a href=&quot;#创建项目&quot; class=&quot;headerlink&quot; title=&quot;创建项目&quot;&gt;&lt;/a&gt;创建项目&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;File -&amp;gt; New -&amp;gt; New Project&lt;/li&gt;
+&lt;li&gt;API 23: Android 6.0&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>在Webstorm中写hexo</title>
+    <link href="http://www.thirteenyu.com/2018/09/16/conf-hexo-webstorm-opt/"/>
+    <id>http://www.thirteenyu.com/2018/09/16/conf-hexo-webstorm-opt/</id>
+    <published>2018-09-16T13:10:54.000Z</published>
+    <updated>2018-12-16T17:19:50.787Z</updated>
+    
+    <content type="html"><![CDATA[<p>博客是hexo搞的，感觉还蛮干净清新的。<br>这里分享下博主写博客的配置。</p><p><img src="/2018/09/16/conf-hexo-webstorm-opt/1.png" alt="" width="" height=""></p><ul><li>Editor -&gt; File and Code Templates<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">title: $&#123;title&#125;</span><br><span class="line">date: $&#123;YEAR&#125;-$&#123;MONTH&#125;-$&#123;DAY&#125; $&#123;HOUR&#125;:$&#123;MINUTE&#125;:$&#123;SECOND&#125;</span><br><span class="line">desc: $&#123;description&#125;</span><br><span class="line">tags: [$&#123;tags&#125;] </span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure></li></ul><a id="more"></a><p>主要的配置就是上面这个，对markdown文件的模板。<br>hexo其实也可以在命令行创建新的博文md，但是总是不太舒服。该短横线的会换成下划线，title也总是要自己建立了md之后手动改。不像英文，文件名和标题名保持一致就好了。<br>使用时注意新建博文时采用markdown的模板。会弹出个框，让你填好内容，生成文件。<br><img src="/2018/09/16/conf-hexo-webstorm-opt/2.png" alt="" width="460" height="220"></p><p>然后就是用<code>nvm</code>管理node的版本的。也是hexo推荐的方式。</p><p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/09/16/conf-hexo-webstorm-opt/">http://www.thirteenyu.com/2018/09/16/conf-hexo-webstorm-opt/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;博客是hexo搞的，感觉还蛮干净清新的。&lt;br&gt;这里分享下博主写博客的配置。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2018/09/16/conf-hexo-webstorm-opt/1.png&quot; alt=&quot;&quot; width=&quot;&quot; height=&quot;&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Editor -&amp;gt; File and Code Templates&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;title: $&amp;#123;title&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;date: $&amp;#123;YEAR&amp;#125;-$&amp;#123;MONTH&amp;#125;-$&amp;#123;DAY&amp;#125; $&amp;#123;HOUR&amp;#125;:$&amp;#123;MINUTE&amp;#125;:$&amp;#123;SECOND&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;desc: $&amp;#123;description&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;tags: [$&amp;#123;tags&amp;#125;] &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;---&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;!-- more --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>个人工具库计划</title>
+    <link href="http://www.thirteenyu.com/2018/05/20/tech-personal-tool-plan/"/>
+    <id>http://www.thirteenyu.com/2018/05/20/tech-personal-tool-plan/</id>
+    <published>2018-05-20T01:20:06.000Z</published>
+    <updated>2018-12-16T17:19:50.844Z</updated>
+    
+    <content type="html"><![CDATA[<p>偶然一个想法，能不能自己做个技术积累。把这些年做过的项目或者内容，提取为自己的工具库，方便新的项目或者工作使用。</p><a id="more"></a><ol><li>开发工具<br>代码库<br> Java<br> python</li></ol><ol start="2"><li>数据工具<br>使用trick<br> excel<br> sublime<br>爬虫<br> 开发计划</li></ol><ol start="3"><li>服务工具<br>房价查询页面</li></ol><p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/05/20/tech-personal-tool-plan/">http://www.thirteenyu.com/2018/05/20/tech-personal-tool-plan/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;偶然一个想法，能不能自己做个技术积累。把这些年做过的项目或者内容，提取为自己的工具库，方便新的项目或者工作使用。&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>时间规划表</title>
+    <link href="http://www.thirteenyu.com/2018/05/13/life-timeline/"/>
+    <id>http://www.thirteenyu.com/2018/05/13/life-timeline/</id>
+    <published>2018-05-13T02:46:59.000Z</published>
+    <updated>2018-12-16T17:19:50.798Z</updated>
+    
+    <content type="html"><![CDATA[<table><thead><tr><th style="text-align:center">序号</th><th style="text-align:center">时间规划</th><th style="text-align:center">时间段</th><th style="text-align:center">内容</th><th style="text-align:center">类型</th><th style="text-align:center">备注</th></tr></thead><tbody><tr><td style="text-align:center">1.1</td><td style="text-align:center">早上</td><td style="text-align:center">7:00-7:30</td><td style="text-align:center">起床</td><td style="text-align:center">生活</td><td style="text-align:center"></td></tr><tr><td style="text-align:center">1.2</td><td style="text-align:center">早上</td><td style="text-align:center">7:30-8:30</td><td style="text-align:center">读书</td><td style="text-align:center">生活</td><td style="text-align:center"></td></tr><tr><td style="text-align:center">2.1</td><td style="text-align:center">上午</td><td style="text-align:center">8:30-9:30</td><td style="text-align:center">工作计划</td><td style="text-align:center">工作</td><td style="text-align:center"></td></tr><tr><td style="text-align:center">2.2</td><td style="text-align:center">上午</td><td style="text-align:center">9:30-11:30</td><td style="text-align:center">工作</td><td style="text-align:center">工作</td><td style="text-align:center"></td></tr><tr><td style="text-align:center">2.3</td><td style="text-align:center">上午</td><td style="text-align:center">11:30-12:00</td><td style="text-align:center">上午总结</td><td style="text-align:center">工作</td><td style="text-align:center"></td></tr><tr><td style="text-align:center">3</td><td style="text-align:center">中午</td><td style="text-align:center">13:00-13:30</td><td style="text-align:center">午休</td><td style="text-align:center">生活</td></tr></tbody></table><p>ToBeContinue…</p><a id="more"></a><p>|下午|<br>|健身|<br>|博客|</p><p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/05/13/life-timeline/">http://www.thirteenyu.com/2018/05/13/life-timeline/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;序号&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;时间规划&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;时间段&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;内容&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;类型&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;备注&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;1.1&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;早上&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;7:00-7:30&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;起床&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;生活&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;1.2&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;早上&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;7:30-8:30&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;读书&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;生活&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;2.1&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;上午&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;8:30-9:30&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;工作计划&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;工作&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;2.2&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;上午&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;9:30-11:30&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;工作&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;工作&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;2.3&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;上午&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;11:30-12:00&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;上午总结&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;工作&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;3&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;中午&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;13:00-13:30&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;午休&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;生活&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;ToBeContinue…&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>个人技术总结 2018.05版</title>
+    <link href="http://www.thirteenyu.com/2018/05/12/cv-tech-summary-201805/"/>
+    <id>http://www.thirteenyu.com/2018/05/12/cv-tech-summary-201805/</id>
+    <published>2018-05-11T23:59:13.000Z</published>
+    <updated>2018-12-16T17:19:50.791Z</updated>
+    
+    <content type="html"><![CDATA[<p>初衷是想说记录自己的技术组成，找出短板。<br>不过放了有点久，忘了整理。。</p><blockquote><ol><li>缺少链接</li><li>格式与规范</li></ol></blockquote><a id="more"></a><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br><span class="line">326</span><br><span class="line">327</span><br><span class="line">328</span><br><span class="line">329</span><br><span class="line">330</span><br><span class="line">331</span><br><span class="line">332</span><br><span class="line">333</span><br><span class="line">334</span><br><span class="line">335</span><br><span class="line">336</span><br><span class="line">337</span><br><span class="line">338</span><br><span class="line">339</span><br><span class="line">340</span><br><span class="line">341</span><br><span class="line">342</span><br><span class="line">343</span><br><span class="line">344</span><br><span class="line">345</span><br><span class="line">346</span><br><span class="line">347</span><br><span class="line">348</span><br><span class="line">349</span><br><span class="line">350</span><br><span class="line">351</span><br><span class="line">352</span><br><span class="line">353</span><br><span class="line">354</span><br><span class="line">355</span><br><span class="line">356</span><br><span class="line">357</span><br><span class="line">358</span><br><span class="line">359</span><br><span class="line">360</span><br><span class="line">361</span><br><span class="line">362</span><br><span class="line">363</span><br><span class="line">364</span><br><span class="line">365</span><br><span class="line">366</span><br><span class="line">367</span><br><span class="line">368</span><br><span class="line">369</span><br><span class="line">370</span><br><span class="line">371</span><br><span class="line">372</span><br><span class="line">373</span><br><span class="line">374</span><br><span class="line">375</span><br><span class="line">376</span><br><span class="line">377</span><br><span class="line">378</span><br><span class="line">379</span><br><span class="line">380</span><br><span class="line">381</span><br><span class="line">382</span><br><span class="line">383</span><br><span class="line">384</span><br><span class="line">385</span><br><span class="line">386</span><br><span class="line">387</span><br><span class="line">388</span><br><span class="line">389</span><br><span class="line">390</span><br><span class="line">391</span><br><span class="line">392</span><br><span class="line">393</span><br><span class="line">394</span><br><span class="line">395</span><br><span class="line">396</span><br><span class="line">397</span><br><span class="line">398</span><br><span class="line">399</span><br><span class="line">400</span><br><span class="line">401</span><br><span class="line">402</span><br><span class="line">403</span><br><span class="line">404</span><br><span class="line">405</span><br><span class="line">406</span><br><span class="line">407</span><br><span class="line">408</span><br><span class="line">409</span><br><span class="line">410</span><br><span class="line">411</span><br><span class="line">412</span><br><span class="line">413</span><br><span class="line">414</span><br><span class="line">415</span><br><span class="line">416</span><br><span class="line">417</span><br><span class="line">418</span><br><span class="line">419</span><br><span class="line">420</span><br><span class="line">421</span><br><span class="line">422</span><br><span class="line">423</span><br><span class="line">424</span><br><span class="line">425</span><br><span class="line">426</span><br><span class="line">427</span><br><span class="line">428</span><br><span class="line">429</span><br><span class="line">430</span><br><span class="line">431</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 技术总结</span></span><br><span class="line"></span><br><span class="line"><span class="section">## 简介</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 个人信息</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 学习经历</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 工作经历</span></span><br><span class="line"></span><br><span class="line"><span class="section">## 项目</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 大数据项目</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### 数据分析/舆情</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### 自研分布式系统开发</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 采集平台</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### redis</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 进程/线程</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 流式处理</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 配置化</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 任务同步</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 任务管理</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### 增加</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### 清除</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### 恢复/重做</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### 开源项目改造</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### ElasticSearch</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### guice注入</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### Bloom Filter</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### tf/idf</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### query parse</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### 大数据基础平台</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 分布式任务管理</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 咨询</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### hbase debug</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 运维</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### IaaS设计</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### security hadoop</span></span><br><span class="line"></span><br><span class="line"><span class="section">######## kerberoes</span></span><br><span class="line"></span><br><span class="line"><span class="section">######### ticket、token</span></span><br><span class="line"></span><br><span class="line"><span class="section">######### login</span></span><br><span class="line"></span><br><span class="line"><span class="section">######## ranger</span></span><br><span class="line"></span><br><span class="line"><span class="section">######### rwxrwxrwx</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### Hadoop、MapReduce、Hive</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### DaaS</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### ETL</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### hive</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### mapreduce</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### spark</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 算法调用</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 算法研究项目</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### 推荐项目</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 绿瘦资料与销售推荐</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### 企业画像</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 员工</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 产品/服务</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 美誉度</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 市场</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 市值</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 行业</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 风险</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 手机项目</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### 手机微信采集</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### adb shell input</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 输入</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 滑动</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 点击</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 长按</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### xposed hook</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### imsi</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### phone</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### mac</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### location</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 模拟登陆</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### accessible service</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 图像识别-验证码</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 脚本解析</span></span><br><span class="line"></span><br><span class="line"><span class="section">## 技术</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 基础</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### APUE</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### 进程线程</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 共享内存</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 管道</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### IO</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### NIO</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### IO多路复用</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### 网络协议</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### java</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### ArrayList、LinkedList、Vector的区别</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 线程安全：vector，线程危险：ArrayList, LinkedList</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### gc</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 分代</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### 新生代</span></span><br><span class="line"></span><br><span class="line"><span class="section">######## eden</span></span><br><span class="line"></span><br><span class="line"><span class="section">######## s0</span></span><br><span class="line"></span><br><span class="line"><span class="section">######### Survivor</span></span><br><span class="line"></span><br><span class="line"><span class="section">######## s1</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### 老年代</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### 持久代</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 回收算法</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### 复制算法</span></span><br><span class="line"></span><br><span class="line"><span class="section">######## HotSpot虚拟机默认Eden和Survivor的大小比例是8:1:1，也就是说新生代中牺牲掉10%的空间而不是一半的空间</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### 标记-清除算法</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### 标记-整理算法</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 垃圾收集器</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### 新生代垃圾收集器</span></span><br><span class="line"></span><br><span class="line"><span class="section">######## Serial收集器作用于新生代，是一个单线程收集器，基于复制算法实现。</span></span><br><span class="line"></span><br><span class="line"><span class="section">######## ParNew收集器作用于新生代，是一个多线程收集器，基于复制算法实现。</span></span><br><span class="line"></span><br><span class="line"><span class="section">######## Parallel Scavenge收集器同样作用于新生代，并且也是采用多线程和复制算法来进行垃圾回收。</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### 老年代垃圾收集器</span></span><br><span class="line"></span><br><span class="line"><span class="section">######## Serial Old收集器作用于老年代，采用单线程和标记-整理算法来实现垃圾回收。</span></span><br><span class="line"></span><br><span class="line"><span class="section">########  Parallel Old收集器是Parallel Scavenge收集器的老年代版本，采用多线程和标记-整理算法来实现老年代的垃圾回收。</span></span><br><span class="line"></span><br><span class="line"><span class="section">######## CMS(Concurrent Mark Sweep)收集器是一款真正实现了并发收集的老年代收集器。</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### spring aop</span></span><br><span class="line"></span><br><span class="line"><span class="section">######  spring apo使用</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 官方文档</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### c++</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### epoll</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 内存管理</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### linux操作</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 进阶</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### 常规</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 负载均衡</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 负载均衡集群</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### nginx负载均衡</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### 对负载均衡的支持方式</span></span><br><span class="line"></span><br><span class="line"><span class="section">######## 轮询</span></span><br><span class="line"></span><br><span class="line"><span class="section">######## weight</span></span><br><span class="line"></span><br><span class="line"><span class="section">######## ip_hash</span></span><br><span class="line"></span><br><span class="line"><span class="section">######## fair</span></span><br><span class="line"></span><br><span class="line"><span class="section">######## url_hash</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### 怎么实现多台服务器之间session的共享</span></span><br><span class="line"></span><br><span class="line"><span class="section">######## 不使用session，换作cookie</span></span><br><span class="line"></span><br><span class="line"><span class="section">######## 应用服务器自行实现共享</span></span><br><span class="line"></span><br><span class="line"><span class="section">######## ip_hash</span></span><br><span class="line"></span><br><span class="line"><span class="section">######### 不能在一些情况下使用</span></span><br><span class="line"></span><br><span class="line"><span class="section">########## nginx不是最前端的服务器</span></span><br><span class="line"></span><br><span class="line"><span class="section">########## nginx的后端还有其它方式的负载均衡</span></span><br><span class="line"></span><br><span class="line"><span class="section">######## upstream_hash</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 高可用</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 源码阅读</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 集群</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 集群主要分为：高可用集群(High Availability Cluster)，负载均衡集群(Load Balance Cluster，nginx即可实现)，科学计算集群(High Performance Computing Cluster)。</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 分布式是以缩短单个任务的执行时间来提升效率的，而集群则是通过提高单位时间内执行的任务数来提升效率。</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 它是根据某种负载策略把请求分发到集群中的每一台服务器上，让整个服务器群来处理网站的请求。</span></span><br><span class="line"></span><br><span class="line"><span class="section">######  在集群服务器架构中，当主服务器故障时，备份服务器能够自动接管主服务器的工作，并及时切换过去，以实现对用户的不间断服务。</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 数据库引擎对比</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### mysql数据库几种引擎对比</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### myisam vs innodb</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### mysql性能</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### ver 5.7 160万只读 QPS</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### 可以处理拥有上千万条记录的大型数据库</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### Thread Pool功能更能直接通过减少CPU的切换，提升系统在高并发时的吞吐率</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### https://github.com/yingjunwu/DBMS-Indexology</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### 大数据组成</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 框架</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### spark</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### mr</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 存储</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 常见的类型</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### hdfs</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### hive</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### hbase</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### elasticsearch</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### nosql性能比较 </span></span><br><span class="line"></span><br><span class="line"><span class="section">####### hbase</span></span><br><span class="line"></span><br><span class="line"><span class="section">######## CP类型</span></span><br><span class="line"></span><br><span class="line"><span class="section">######### 参考：CAP</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### redis</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### mongodb</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 算法</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### bit map</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### bloom filter</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 分布式锁实现</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 数据库</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### redis</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### zookeeper</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### 安全</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 缓冲区溢出</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### sql注入</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### prepare statement</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### https</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 算法</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### 机器学习</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### 深度学习</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### 欠拟合</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### 过拟合</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### 优化方法</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### 优化原理</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### 小根堆</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 小根堆总结 https://blog.csdn.net/ganggexiongqi/article/details/7449970</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 大根堆小根堆 https://blog.csdn.net/love_gg/article/details/7945561</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 基本的原理</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 完全二叉树</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 从上往下、从左往右编号</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### 变成数组</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 逐个调整</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### trie树</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 第六天：熟悉trie树</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### 红黑树</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 数据库中的应用</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### DFS/BFS</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 架构师</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### 如何设计一个分布式系统</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 可扩展、高可用、负载均衡网站架构设计方案  </span></span><br><span class="line"></span><br><span class="line"><span class="section">#### 大数据算法应用</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 十大大数据问题与解法 </span></span><br><span class="line"></span><br><span class="line"><span class="section">######  5、 给定a、b两个文件，各存放50亿个url，每个url各占64字节，内存限制是4G，让你找出a、b文件共同的url？</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### 方案1：可以估计每个文件安的大小为5G×64=320G，远远大于内存限制的4G。考虑采取分而治之的方法。</span></span><br><span class="line"></span><br><span class="line"><span class="section">######## 遍历文件a，对每个url求取hash(url)00，然后根据所取得的值将url分别存储到1000个小文件（记为a0,a1,...,a999）中。这样每个小文件的大约为300M。</span></span><br><span class="line"></span><br><span class="line"><span class="section">######## 遍历文件b，采取和a相同的方式将url分别存储到1000小文件（记为b0,b1,...,b999）。这样处理后，所有可能相同的url都在对应的小文件（a0vsb0,a1vsb1,...,a999vsb999）中，不对应的小文件不可能有相同的url。然后我们只要求出1000对小文件中相同的url即可。</span></span><br><span class="line"></span><br><span class="line"><span class="section">######## 求每对小文件中相同的url时，可以把其中一个小文件的url存储到hash_set中。然后遍历另一个小文件的每个url，看其是否在刚才构建的hash_set中，如果是，那么就是共同的url，存到文件里面就可以了。</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### 方案2：如果允许有一定的错误率，可以使用Bloom filter，</span></span><br><span class="line"></span><br><span class="line"><span class="section">######## 4G内存大概可以表示340亿bit。将其中一个文件中的url使用Bloom filter映射为这340亿bit，</span></span><br><span class="line"></span><br><span class="line"><span class="section">######## 然后挨个读取另外一个文件的url，检查是否与Bloom filter，如果是，那么该url应该是共同的url（注意会有一定的错误率）。</span></span><br><span class="line"></span><br><span class="line"><span class="section">## 能力</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 基础扎实</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 进阶应用能力</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 算法</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### 大数据</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### 常规算法</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 学习能力</span></span><br></pre></td></tr></table></figure><p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/05/12/cv-tech-summary-201805/">http://www.thirteenyu.com/2018/05/12/cv-tech-summary-201805/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;初衷是想说记录自己的技术组成，找出短板。&lt;br&gt;不过放了有点久，忘了整理。。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;缺少链接&lt;/li&gt;
+&lt;li&gt;格式与规范&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ES回复旧shard数据存在的坑</title>
+    <link href="http://www.thirteenyu.com/2018/05/11/bug-es-recover-old-shards/"/>
+    <id>http://www.thirteenyu.com/2018/05/11/bug-es-recover-old-shards/</id>
+    <published>2018-05-11T01:24:05.000Z</published>
+    <updated>2018-12-16T17:19:50.786Z</updated>
+    
+    <content type="html"><![CDATA[<p>这个问题是在某次运维错误恢复down掉的es节点发现的，后补吧。</p><a id="more"></a><p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/05/11/bug-es-recover-old-shards/">http://www.thirteenyu.com/2018/05/11/bug-es-recover-old-shards/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这个问题是在某次运维错误恢复down掉的es节点发现的，后补吧。&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>破解微信验证码</title>
+    <link href="http://www.thirteenyu.com/2018/05/05/tech-crack-wechat-verify-code/"/>
+    <id>http://www.thirteenyu.com/2018/05/05/tech-crack-wechat-verify-code/</id>
+    <published>2018-05-05T08:53:20.000Z</published>
+    <updated>2018-12-16T17:19:50.841Z</updated>
+    
+    <content type="html"><![CDATA[<p>这个小功能其实在3个月前已经做了。一直没发出来，一方面是因为属于公司的代码；另一方面担心有不良影响。不过现在想想，感觉应该一种技术交流的理念去看待这件事。</p><p>验证码本质是认证方式的一种。在计算机安全领域，3A包括认证、授权和会计(Authentication, Authorization and Accounting)。认证(Authentication)即证明是什么。通过验证码，系统用作识别操作的对象是否是真人(图灵测试，Turing Test)。</p><p>这里只涉及对特定场景下图片验证码的识别跟通过。验证码其实有很多种类，常见的例如文字验证码、数值与数值计算验证码、图像验证码等。这里处理是在微信注册时出现的图像验证码。该分享本意是交流图像的处理方法。</p><p>至于为什么拿这个作为研究，一方面微信这个APP常用啊，说出来应该有不少人有共鸣；另一方面素材容易获取、场景也简单，虽然后来微信对此有所加强，不过总的来说还是很适合拿来练手的。</p><p>不多说，下面进入正文。</p><a id="more"></a><h2 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h2><p>微信注册登录过程中，有一个简单的图片验证码模块。注册者需要手动滑动验证码上的滑块，到图中指定位置才能通过并进入下一步。</p><p><img src="/2018/05/05/tech-crack-wechat-verify-code/1.png" alt="" width="276" height="491"></p><p>破解目标：找到滑块的终点位置。因为起点是固定的。</p><h2 id="1-裁剪"><a href="#1-裁剪" class="headerlink" title="1. 裁剪"></a>1. 裁剪</h2><p><img src="/2018/05/05/tech-crack-wechat-verify-code/2.png" alt="" width="" height=""></p><h2 id="2-初步定位"><a href="#2-初步定位" class="headerlink" title="2. 初步定位"></a>2. 初步定位</h2><p><img src="/2018/05/05/tech-crack-wechat-verify-code/3.png" alt="" width="" height=""></p><h2 id="3-缩小范围"><a href="#3-缩小范围" class="headerlink" title="3. 缩小范围"></a>3. 缩小范围</h2><p><img src="/2018/05/05/tech-crack-wechat-verify-code/4.png" alt="" width="" height=""></p><h2 id="4-最终位置"><a href="#4-最终位置" class="headerlink" title="4. 最终位置"></a>4. 最终位置</h2><p><img src="/2018/05/05/tech-crack-wechat-verify-code/5.png" alt="" width="" height=""></p><p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/05/05/tech-crack-wechat-verify-code/">http://www.thirteenyu.com/2018/05/05/tech-crack-wechat-verify-code/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这个小功能其实在3个月前已经做了。一直没发出来，一方面是因为属于公司的代码；另一方面担心有不良影响。不过现在想想，感觉应该一种技术交流的理念去看待这件事。&lt;/p&gt;
+&lt;p&gt;验证码本质是认证方式的一种。在计算机安全领域，3A包括认证、授权和会计(Authentication, Authorization and Accounting)。认证(Authentication)即证明是什么。通过验证码，系统用作识别操作的对象是否是真人(图灵测试，Turing Test)。&lt;/p&gt;
+&lt;p&gt;这里只涉及对特定场景下图片验证码的识别跟通过。验证码其实有很多种类，常见的例如文字验证码、数值与数值计算验证码、图像验证码等。这里处理是在微信注册时出现的图像验证码。该分享本意是交流图像的处理方法。&lt;/p&gt;
+&lt;p&gt;至于为什么拿这个作为研究，一方面微信这个APP常用啊，说出来应该有不少人有共鸣；另一方面素材容易获取、场景也简单，虽然后来微信对此有所加强，不过总的来说还是很适合拿来练手的。&lt;/p&gt;
+&lt;p&gt;不多说，下面进入正文。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="安全" scheme="http://www.thirteenyu.com/tags/%E5%AE%89%E5%85%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spark 1.6.2 清理临时文件</title>
+    <link href="http://www.thirteenyu.com/2018/04/28/code-spark162-clean-tmp/"/>
+    <id>http://www.thirteenyu.com/2018/04/28/code-spark162-clean-tmp/</id>
+    <published>2018-04-28T04:23:06.000Z</published>
+    <updated>2018-12-16T17:19:50.786Z</updated>
+    
+    <content type="html"><![CDATA[<p>写这篇之时，实际已经隔了好多天没更新。当时只留了个开头，就没有写下去。</p><p>现在也是抽空趁机把几篇同时更新。最近也是事多，工作上、生活上都或多或少产生一些问题。这个五一其实过得蛮拧巴。</p><p>不过写这件事情还是要坚持的。今天还翻看了耗子哥的博客-<a href="https://coolshell.cn/" target="_blank" rel="noopener">CoolShell</a>。像耗子哥这般能持续输出有深度有硬实力的硬文，是自己学习的典范。自己的写作还是过多水分和稀释了，缺乏真正的见解，不过有些经验还是得长久积累才有几乎写出来对不。</p><p>下面是这段时间写Spark时候遇到的一个问题总结，内容不深但是供参考。</p><a id="more"></a><h2 id="问题状况"><a href="#问题状况" class="headerlink" title="问题状况"></a>问题状况</h2><p>系统的磁盘被占满，导致系统上安装的Hadoop组件部分退出，以致集群某些服务不可用。</p><h2 id="定位原因"><a href="#定位原因" class="headerlink" title="定位原因"></a>定位原因</h2><blockquote><p>Spark本地临时目录没有清理</p></blockquote><ol><li>观察目录使用情况，发现<code>/tmp</code>使用过多</li><li>对<code>/tmp</code>下目录查看，发现以<code>spark-*</code>开头的文件夹空间占用很大<br><img src="/2018/04/28/code-spark162-clean-tmp/spark162-ct-01.png" alt="" width="370" height="37"></li><li>深入查看发现都为同一个项目的jar包</li></ol><h2 id="原理探究-待考证"><a href="#原理探究-待考证" class="headerlink" title="原理探究(待考证)"></a>原理探究(待考证)</h2><blockquote><p>估计是主进程常驻，JavaSparkContext没有清理的原因</p></blockquote><ol><li>起spark任务的主进程cron进程，常驻并定时调度起spark</li><li>虽然spark context使用完后close，但主进程没有退出，spark context清理不完整</li></ol><h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>关闭spark context的时候，同时主动调用清理临时目录的代码：</p><pre><code class="java"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">clearTmpDirs</span><span class="params">()</span> </span>{    <span class="keyword">try</span> {        logger.info(<span class="string">"clear Utils's localRootDirs"</span>);        <span class="keyword">synchronized</span> (Utils$.MODULE$) {            Utils$.MODULE$.clearLocalRootDirs();        }        logger.info(<span class="string">"deleting ShutdownHookManager's shutdownDeletePaths"</span>);        Field field = ShutdownHookManager$.MODULE$.getClass()                .getDeclaredField(<span class="string">"org$apache$spark$util$ShutdownHookManager$$shutdownDeletePaths"</span>);        field.setAccessible(<span class="keyword">true</span>);        scala.collection.mutable.HashSet shutdownDeletePaths =                (scala.collection.mutable.HashSet) field.get(ShutdownHookManager$.MODULE$);        <span class="keyword">synchronized</span> (shutdownDeletePaths) {            Set&lt;String&gt; dirPaths = <span class="keyword">new</span> HashSet&lt;&gt;(JavaConversions.asJavaSet(shutdownDeletePaths));            <span class="keyword">for</span> (String dir : dirPaths) {                File dirPath = <span class="keyword">new</span> File(dir);                logger.info(<span class="string">"deleting Directory - "</span> + dirPath);                Utils.deleteRecursively(dirPath);                ShutdownHookManager.removeShutdownDeleteDir(dirPath);            }        }    } <span class="keyword">catch</span> (Exception e) {        logger.warn(<span class="string">"get ShutdownHookManager's shutdownDeletePaths failed"</span>, e);    }}</code></pre><p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/04/28/code-spark162-clean-tmp/">http://www.thirteenyu.com/2018/04/28/code-spark162-clean-tmp/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;写这篇之时，实际已经隔了好多天没更新。当时只留了个开头，就没有写下去。&lt;/p&gt;
+&lt;p&gt;现在也是抽空趁机把几篇同时更新。最近也是事多，工作上、生活上都或多或少产生一些问题。这个五一其实过得蛮拧巴。&lt;/p&gt;
+&lt;p&gt;不过写这件事情还是要坚持的。今天还翻看了耗子哥的博客-&lt;a href=&quot;https://coolshell.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CoolShell&lt;/a&gt;。像耗子哥这般能持续输出有深度有硬实力的硬文，是自己学习的典范。自己的写作还是过多水分和稀释了，缺乏真正的见解，不过有些经验还是得长久积累才有几乎写出来对不。&lt;/p&gt;
+&lt;p&gt;下面是这段时间写Spark时候遇到的一个问题总结，内容不深但是供参考。&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>VS Code入手</title>
+    <link href="http://www.thirteenyu.com/2018/04/27/conf-vscode-indoor/"/>
+    <id>http://www.thirteenyu.com/2018/04/27/conf-vscode-indoor/</id>
+    <published>2018-04-27T03:05:26.000Z</published>
+    <updated>2018-12-16T17:19:50.791Z</updated>
+    
+    <content type="html"><![CDATA[<p>扎心了，多少年没写的前端今天要捡起来。项目来了人员不够，女人当男人用，男人当畜生用了。😂</p><p>开玩笑，不过前端发展之快也出乎意料。11年初次接触，还是裸写html、css、javascript的时候，那是javascript也没有那么重视。不过传说的V8出现，似乎渐渐改变了业界对javascript的看法。而伴随着智能手机(iphone 3GS往后的)带来的移动互联网发展，响应式、渐进式、单页面应用等等的思路与概念不断出现，推陈出新。</p><p>今天就回顾一下自己怎么捡回前端的coding手感的。</p><a id="more"></a><h2 id="vscode"><a href="#vscode" class="headerlink" title="vscode"></a>vscode</h2><blockquote><p>说实话，这个工具可是比以前常用的Notepad++好用多了，而且自带Emmet - 写前端神器之一。</p></blockquote><h4 id="plugin"><a href="#plugin" class="headerlink" title="plugin"></a>plugin</h4><ul><li>ESLint</li><li>Emment<ul><li><a href="https://code.visualstudio.com/docs/editor/emmet" target="_blank" rel="noopener">https://code.visualstudio.com/docs/editor/emmet</a></li></ul></li><li>Auto Close Tag</li><li>Auto Rename Tag</li><li>Path Intellisense</li><li>Project Manager</li><li>beautify</li><li>minify</li><li>Git History</li></ul><h4 id="config"><a href="#config" class="headerlink" title="config"></a>config</h4><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"terminal.integrated.shell.osx"</span>: <span class="string">"/bin/zsh"</span>,</span><br><span class="line">    <span class="attr">"editor.fontSize"</span>: <span class="number">14</span>,</span><br><span class="line">    <span class="attr">"workbench.colorTheme"</span>: <span class="string">"Solarized Dark"</span>,</span><br><span class="line">    <span class="attr">"editor.quickSuggestions"</span>: &#123;</span><br><span class="line">        <span class="attr">"other"</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="attr">"comments"</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="attr">"strings"</span>: <span class="literal">true</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"emmet.triggerExpansionOnTab"</span>: <span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><ol><li><p>上手即看代码</p><ul><li>由多年开发以及公司内部协作经验，最新最准的逻辑都是在代码里面。文档、指引一类一般维护第一版就没有再更新过了。</li><li>代码用了vue做脚手架，echarts做图表，其他还不懂的没有更新在此</li></ul></li><li><p>接手简单的功能</p><blockquote><p>这里也说明，代码是需要实践的。</p></blockquote><ul><li>功能需求：为原结构中加入两条分类别统计的曲线图</li><li><p>代码样例：因为是javascript，代码还挺容易的，这里贴一下</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 原代码</span></span><br><span class="line">handleTrendChartsData: <span class="function">(<span class="params">volumeTrend</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> xAxis = [],</span><br><span class="line">      volumeTrendData = [],</span><br><span class="line">      dataArray = [],</span><br><span class="line">      max = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i <span class="keyword">in</span> volumeTrend) &#123;</span><br><span class="line">      <span class="keyword">if</span> (!R.contains(fn.getLocalTime(volumeTrend[i].key, <span class="string">'yyyyMMdd'</span>))(xAxis)) &#123;</span><br><span class="line">        xAxis.push(fn.getLocalTime(volumeTrend[i].key, <span class="string">'yyyyMMdd'</span>));</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i <span class="keyword">in</span> xAxis) &#123;</span><br><span class="line">      <span class="keyword">let</span> t = <span class="literal">false</span>;</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">let</span> j <span class="keyword">in</span> volumeTrend) &#123;</span><br><span class="line">        <span class="keyword">if</span> (xAxis[i] == fn.getLocalTime(volumeTrend[j].key, <span class="string">'yyyyMMdd'</span>)) &#123;</span><br><span class="line">          t = <span class="literal">true</span>;</span><br><span class="line">          volumeTrendData.push(&#123;</span><br><span class="line">            proportion: (volumeTrend[j].proportion * <span class="number">100</span>).toFixed(<span class="number">2</span>),</span><br><span class="line">            value: volumeTrend[j].count</span><br><span class="line">          &#125;);</span><br><span class="line">          <span class="comment">// dataArray.push(parseInt(volumeTrend[j].proportion * 100));</span></span><br><span class="line">          <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">if</span> (!t) &#123;</span><br><span class="line">        volumeTrendData.push(&#123;</span><br><span class="line">          value: <span class="number">0</span>,</span><br><span class="line">          count: <span class="number">0</span></span><br><span class="line">        &#125;)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// max = fn.getMaxNum(dataArray);</span></span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      volumeTrend: volumeTrendData,</span><br><span class="line">      xAxis: xAxis,</span><br><span class="line">      <span class="comment">// max: max</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">// 修改后</span></span><br><span class="line">handleTrendChartsMultiData: <span class="function">(<span class="params">data</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">let</span> result = &#123;</span><br><span class="line">    xAxis: [],</span><br><span class="line">    volumeTrend: [],</span><br><span class="line">    volumeTrend0: [],</span><br><span class="line">    volumeTrend1: []</span><br><span class="line">  &#125;;</span><br><span class="line">    </span><br><span class="line">  <span class="comment">// 对齐时间</span></span><br><span class="line">  <span class="keyword">let</span> dateArray = [];</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i <span class="keyword">in</span> data.trend) &#123;</span><br><span class="line">    dateArray.push(data.trend[i].key)</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i <span class="keyword">in</span> data.trend0) &#123;</span><br><span class="line">    dateArray.push(data.trend0[i].key)</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i <span class="keyword">in</span> data.trend1) &#123;</span><br><span class="line">    dateArray.push(data.trend1[i].key)</span><br><span class="line">  &#125;</span><br><span class="line">  dateArray = [...new <span class="built_in">Set</span>(dateArray)].sort(<span class="function"><span class="keyword">function</span> (<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a - b;</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="comment">// 填充数据</span></span><br><span class="line">  dateArray.forEach(<span class="function"><span class="params">item</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (item) &#123;</span><br><span class="line">      <span class="keyword">let</span> trendObj = R.find(R.propEq(<span class="string">'key'</span>, item))(data.trend);</span><br><span class="line">      result.volumeTrend.push(trendObj ? trendObj.count : <span class="number">0</span>);</span><br><span class="line">    </span><br><span class="line">      result.xAxis.push(fn.getLocalTime(item, <span class="string">'yyyyMMdd'</span>));</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">if</span> (data.trend0 &amp;&amp; data.trend0.length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">    dateArray.forEach(<span class="function"><span class="params">item</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">if</span> (item) &#123;</span><br><span class="line">        <span class="keyword">let</span> trend0Obj = R.find(R.propEq(<span class="string">'key'</span>, item))(data.trend0);</span><br><span class="line">        result.volumeTrend0.push(trend0Obj ? trend0Obj.count : <span class="number">0</span>);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (data.trend1 &amp;&amp; data.trend1.length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">    dateArray.forEach(<span class="function"><span class="params">item</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">if</span> (item) &#123;</span><br><span class="line">        <span class="keyword">let</span> trend1Obj = R.find(R.propEq(<span class="string">'key'</span>, item))(data.trend1);</span><br><span class="line">        result.volumeTrend1.push(trend1Obj ? trend1Obj.count : <span class="number">0</span>);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">    </span><br><span class="line">  <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>按需进行修改</p></li></ul></li></ol><p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/04/27/conf-vscode-indoor/">http://www.thirteenyu.com/2018/04/27/conf-vscode-indoor/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;扎心了，多少年没写的前端今天要捡起来。项目来了人员不够，女人当男人用，男人当畜生用了。😂&lt;/p&gt;
+&lt;p&gt;开玩笑，不过前端发展之快也出乎意料。11年初次接触，还是裸写html、css、javascript的时候，那是javascript也没有那么重视。不过传说的V8出现，似乎渐渐改变了业界对javascript的看法。而伴随着智能手机(iphone 3GS往后的)带来的移动互联网发展，响应式、渐进式、单页面应用等等的思路与概念不断出现，推陈出新。&lt;/p&gt;
+&lt;p&gt;今天就回顾一下自己怎么捡回前端的coding手感的。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="配置" scheme="http://www.thirteenyu.com/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+      <category term="前端" scheme="http://www.thirteenyu.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL性能初步调优-01</title>
+    <link href="http://www.thirteenyu.com/2018/04/25/tech-mysql-optimization-01/"/>
+    <id>http://www.thirteenyu.com/2018/04/25/tech-mysql-optimization-01/</id>
+    <published>2018-04-25T13:44:52.000Z</published>
+    <updated>2018-12-16T17:19:50.844Z</updated>
+    
+    <content type="html"><![CDATA[<p>MySQL是一个十分流行的RDBMS。介绍就不必了吧，相信大家都了解。除了有钱有需求需要购买使用商用版的SQLServer以及Oracle DB2之类的，MySQL基本承载大多数公司的关系型数据存储需求。开源、性能也不差，而且对开发者友好（基本没有多少程序员没听过或者没有用过）。</p><p>在MySQL的日常使用过程中，总会踩上一两个坑。随着项目推进，对MySQL的要求越来越高，也就会逐渐接触到各式隐藏问题。例如：中文字符集不兼容，表数据增长过快等。</p><p>网上对MySQL存在大量使用与优化的文章。正因为MySQL的广泛流行，不少热心的程序员都会或多或少分享自己遇到坑或者使用过程的优化心得。所幸于此，我平时面对的异常都有对应的解决方案文章。</p><p>这里就梳理最近遇到的问题，以及对应的处理方案。</p><a id="more"></a><h2 id="SELECT语句异常的慢"><a href="#SELECT语句异常的慢" class="headerlink" title="SELECT语句异常的慢"></a>SELECT语句异常的慢</h2><p>总结：表设计之初就应该预计好字段类型、大小，以及需要索引的字段。在扩展性与性能之间取得平衡，不能一味为着拓展性而忽略实际场景的需要。</p><p>问题描述：简单的select提取100+条数据，花了1分钟。按id取，数据表总行数约1000万。</p><p>原因分析：</p><ol><li>通过自带工具profile<ul><li><code>SET profiling = ON;</code></li><li><code>show profiles;</code></li><li><code>show profile for query [查询ID];</code></li></ul></li><li>耗时主要集中在sending data阶段<ul><li>该阶段实际上包括了两个阶段：收集+发送</li><li>从参考文章3中发现这个：当Innodb的存储格式是ROW_FORMAT=COMPACT(or ROW_FORMAT=REDUNDANT)的时候，Innodb只会存储前768字节的长度，剩余的数据存放到“溢出页”中</li><li>于是怀疑是不是字段设置不合理导致的</li></ul></li><li><p>查看表结构，基本定位了原因是没有做索引。</p><ul><li>id字段没有做索引</li><li>字段的类型与大小脱离实际</li><li><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="string">`t_customer_tags_tmp`</span> (</span><br><span class="line">  <span class="string">`target_id`</span> <span class="built_in">VARCHAR</span>(<span class="number">128</span>)</span><br><span class="line">              <span class="keyword">COLLATE</span> utf8mb4_unicode_ci <span class="keyword">DEFAULT</span> <span class="literal">NULL</span></span><br><span class="line">  <span class="keyword">COMMENT</span> <span class="string">'客户ID'</span>,</span><br><span class="line">  <span class="string">`tags_list`</span> <span class="built_in">VARCHAR</span>(<span class="number">200</span>)</span><br><span class="line">              <span class="keyword">COLLATE</span> utf8mb4_unicode_ci <span class="keyword">DEFAULT</span> <span class="literal">NULL</span></span><br><span class="line">  <span class="keyword">COMMENT</span> <span class="string">'部分标签列表'</span>,</span><br><span class="line">  <span class="keyword">KEY</span> <span class="string">`customer_tags_tmp_target_id_index`</span>(<span class="string">`target_id`</span>)</span><br><span class="line">)</span><br><span class="line">  <span class="keyword">ENGINE</span> = <span class="keyword">InnoDB</span></span><br><span class="line">  <span class="keyword">DEFAULT</span> <span class="keyword">CHARSET</span> = utf8mb4</span><br><span class="line">  <span class="keyword">COLLATE</span> = utf8mb4_unicode_ci</span><br><span class="line">  <span class="keyword">COMMENT</span> =<span class="string">'客户部分标签列表'</span>;</span><br></pre></td></tr></table></figure></li></ul></li><li><p>改过来后，查询时间缩短为ms级</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> db_parrot.t_customer_tags_tmp (</span><br><span class="line">  <span class="string">`target_id`</span> <span class="built_in">BIGINT</span> <span class="keyword">NOT</span> <span class="literal">NULL</span> PRIMARY <span class="keyword">KEY</span></span><br><span class="line">  <span class="keyword">COMMENT</span> <span class="string">'客户ID'</span>,</span><br><span class="line">  <span class="string">`tags_list`</span> <span class="built_in">VARCHAR</span>(<span class="number">64</span>) <span class="keyword">DEFAULT</span> <span class="literal">NULL</span></span><br><span class="line">  <span class="keyword">COMMENT</span> <span class="string">'部分标签列表'</span></span><br><span class="line">)</span><br><span class="line">  <span class="keyword">COMMENT</span> =<span class="string">'客户部分标签列表'</span>;</span><br></pre></td></tr></table></figure></li></ol><h2 id="批量INSERT异常的慢"><a href="#批量INSERT异常的慢" class="headerlink" title="批量INSERT异常的慢"></a>批量INSERT异常的慢</h2><p>总结：<code>autocommit</code>的使用需要根据实际。一般来说，保证每次commit可能实现较高的数据一致性，但会牺牲性能；但如果需要等到多条结果完成后再commit，又需要注意数据一致的问题。</p><p>问题描述：在调用QueryRunner时，批量插入更新非常慢。1000多的数据需要耗时1分钟以上。</p><p>原因分析：</p><ol><li>面向Google编程，查了一下MySQL插入缓慢的原因<ul><li>[已经验证] autocommit：每次插入都commit一次，虽然保证数据的写入，但数量较多时将导致插入时间大大增长</li><li>[尚未验证] innodb_flush_log_at_trx_commit：记录操作记录写入时机。</li></ul></li><li>在执行的MySQL工具中，配置批量插入的”autocommit”为”false”。<ul><li>最后必须补充commit。</li></ul></li><li>效果：更新后，插入时间缩短为毫秒级别。</li></ol><h2 id="两个小表关联异常的慢"><a href="#两个小表关联异常的慢" class="headerlink" title="两个小表关联异常的慢"></a>两个小表关联异常的慢</h2><p>总结：小表本来就不大，但是却消耗的大量时间(&gt;20 min)</p><p>问题描述：3w多的客户跟标签，关联标签居然花了1分钟</p><p>原因分析：暂无</p><p>解决方案：添加索引</p><h2 id="LIMIT优化"><a href="#LIMIT优化" class="headerlink" title="LIMIT优化"></a>LIMIT优化</h2><p>总结：MySQL先执行连接查询，再进行排序。</p><p>！！！TBA</p><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ol><li><a href="https://blog.csdn.net/xiao__gui/article/details/8616224" target="_blank" rel="noopener">MySQL查询优化:连接查询排序limit(join、order by、limit语句)</a></li><li><a href="http://blog.itpub.net/30150152/viewspace-1774408/" target="_blank" rel="noopener">实战：MySQL Sending data导致查询很慢的问题详细分析</a></li><li><a href="http://hidba.org/?p=551" target="_blank" rel="noopener">innodb使用大字段text，blob的一些优化建议</a></li><li><a href="http://haitian299.github.io/2016/05/26/mysql-partitioning/" target="_blank" rel="noopener">［MySQL］MySQL分区与传统的分库分表</a></li><li><a href="http://haitian299.github.io/2016/05/20/mysql-index-and-optimizing/" target="_blank" rel="noopener">［MySQL］MySQL索引实现原理及相关优化策略</a></li></ol><p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/04/25/tech-mysql-optimization-01/">http://www.thirteenyu.com/2018/04/25/tech-mysql-optimization-01/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;MySQL是一个十分流行的RDBMS。介绍就不必了吧，相信大家都了解。除了有钱有需求需要购买使用商用版的SQLServer以及Oracle DB2之类的，MySQL基本承载大多数公司的关系型数据存储需求。开源、性能也不差，而且对开发者友好（基本没有多少程序员没听过或者没有用过）。&lt;/p&gt;
+&lt;p&gt;在MySQL的日常使用过程中，总会踩上一两个坑。随着项目推进，对MySQL的要求越来越高，也就会逐渐接触到各式隐藏问题。例如：中文字符集不兼容，表数据增长过快等。&lt;/p&gt;
+&lt;p&gt;网上对MySQL存在大量使用与优化的文章。正因为MySQL的广泛流行，不少热心的程序员都会或多或少分享自己遇到坑或者使用过程的优化心得。所幸于此，我平时面对的异常都有对应的解决方案文章。&lt;/p&gt;
+&lt;p&gt;这里就梳理最近遇到的问题，以及对应的处理方案。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="MySQL" scheme="http://www.thirteenyu.com/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>隧道的几个方法</title>
+    <link href="http://www.thirteenyu.com/2018/04/22/share-tunnel-methods/"/>
+    <id>http://www.thirteenyu.com/2018/04/22/share-tunnel-methods/</id>
+    <published>2018-04-22T04:20:35.000Z</published>
+    <updated>2018-12-16T17:19:50.830Z</updated>
+    
+    <content type="html"><![CDATA[<p>相信大家在遇到限制的网络都有种无奈和不爽吧。。举两个场景：客户提供访问对方内网的VPN，而访问正式服务器还需要经过一层跳板机；某些站点资源绑定了访问的出口IP，一旦离开指定网络就无法访问…像这些限制就是大大降低程序员的生产效率哇。</p><p>但有防御就有攻击。既然对方都摆出这么些阵势，那我们自己也需要备一些政策应对。</p><p>这里就大概分享下博主用到的几种方式。实用为主、简单为主，但是能解决问题就是极好的。</p><a id="more"></a><h2 id="ssh-Linux-Mac"><a href="#ssh-Linux-Mac" class="headerlink" title="ssh (Linux/Mac)"></a>ssh (Linux/Mac)</h2><p>ssh是一个很强悍的工具好吧。</p><ul><li>如果没有顺手的集群运维工具，如saltstack之类的，ssh（可能）就是远程执行命令的唯一选择了。</li><li>同时，ssh连接到主机后，该连接自身就可以作为一条服务器与客户机的通道。</li></ul><p>以下的命令就是利用ssh登陆主机后形成的链接来作文章，形成隧道以供多种用途：</p><ol><li>本地端口转发<br> 命令：<code>ssh -L 2121:host2:21 host3</code><br> 核心参数：<code>-L</code><br> 登陆位置：localhost<br> 应用场景：<img src="/2018/04/22/share-tunnel-methods/share-tm-02.png" alt="" width="250" height="90"></li><li>远程端口转发<br> 命令：<code>ssh -R 2121:host2:21 host1</code><br> 核心参数：<code>-R</code><br> 登陆位置：host3<br> 应用场景：<img src="/2018/04/22/share-tunnel-methods/share-tm-03.png" alt="" width="250" height="90"></li><li>绑定本地端口<br> 命令：<code>ssh -qTfnN -D 1080 dev@host3 -p 3822</code><br> 核心参数：<code>-D</code><br> 登陆位置：localhost<br> 应用场景：<img src="/2018/04/22/share-tunnel-methods/share-tm-04.png" alt="" width="250" height="90"></li></ol><h2 id="netsh-Windows"><a href="#netsh-Windows" class="headerlink" title="netsh (Windows)"></a>netsh (Windows)</h2><p>虽然大多数服务器都是Linux的系统，但作为跳板机可能是Windows的。<br>Windows上也存在类似端口转发的工具，也就是<code>netsh</code>。</p><p>命令：打开Windows的cmd</p><ol><li><code>netsh interface portproxy show all</code></li><li><code>netsh interface portproxy add v4tov4 listenport=51433 connectaddress=host2 connectport=1433</code></li></ol><p>执行位置：host3<br>辅助配置：<img src="/2018/04/22/share-tunnel-methods/share-tm-06.png" alt="" width="600" height="90"><br>应用场景：<img src="/2018/04/22/share-tunnel-methods/share-tm-05.png" alt="" width="250" height="90"></p><h2 id="xshell-Windows"><a href="#xshell-Windows" class="headerlink" title="xshell (Windows)"></a>xshell (Windows)</h2><blockquote><p>Windows没有ssh的命令，但是ssh的工具一把。我就把我常用并且感觉用起来最便利的一款推荐。</p></blockquote><p>纯粹GUI配置：</p><ol><li>常规配置：登陆的host以及账号密码<br><img src="/2018/04/22/share-tunnel-methods/share-tm-07.png" alt="" width="285" height="85"></li><li>隧道配置：切换到隧道页面，选择隧道类型并填写对应参数<br><img src="/2018/04/22/share-tunnel-methods/share-tm-08.png" alt="" width="285" height="130"></li></ol><h2 id="辅助工具"><a href="#辅助工具" class="headerlink" title="辅助工具"></a>辅助工具</h2><ol><li>Proxy SwitchyOmega （<a href="https://chrome.google.com/webstore/detail/padekgcemlokbadohgkifijomclgjgif" target="_blank" rel="noopener">Chrome Web Store</a> / <a href="https://github.com/FelisCatus/SwitchyOmega/releases" target="_blank" rel="noopener">CRX</a>）<br> 参考配置：<img src="/2018/04/22/share-tunnel-methods/share-tm-01.png" alt="" width="420" height="85"></li></ol><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ol><li><a href="http://www.ruanyifeng.com/blog/2011/12/ssh_port_forwarding.html" target="_blank" rel="noopener">SSH原理与运用（二）：远程操作与端口转发</a></li><li><a href="http://aofengblog.blog.163.com/blog/static/631702120148573851740/" target="_blank" rel="noopener">在windows上用netsh动态配置端口转发</a></li></ol><p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/04/22/share-tunnel-methods/">http://www.thirteenyu.com/2018/04/22/share-tunnel-methods/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;相信大家在遇到限制的网络都有种无奈和不爽吧。。举两个场景：客户提供访问对方内网的VPN，而访问正式服务器还需要经过一层跳板机；某些站点资源绑定了访问的出口IP，一旦离开指定网络就无法访问…像这些限制就是大大降低程序员的生产效率哇。&lt;/p&gt;
+&lt;p&gt;但有防御就有攻击。既然对方都摆出这么些阵势，那我们自己也需要备一些政策应对。&lt;/p&gt;
+&lt;p&gt;这里就大概分享下博主用到的几种方式。实用为主、简单为主，但是能解决问题就是极好的。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://www.thirteenyu.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="分享" scheme="http://www.thirteenyu.com/tags/%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PMBOK第六版中文版</title>
+    <link href="http://www.thirteenyu.com/2018/04/21/share-pmbok-6-cn/"/>
+    <id>http://www.thirteenyu.com/2018/04/21/share-pmbok-6-cn/</id>
+    <published>2018-04-21T13:27:20.000Z</published>
+    <updated>2018-12-19T03:31:32.705Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天被整烦了。</p><p>本来是想上网一本PMBOK，用作PMP的准备材料。冒出考这个项目的想法也比较任性，而且碰巧最近在项目管理上遇到一些难题也需要丰富些理论知识。</p><p>虽然最终找到了，但过程真的是越找越气。<a href="https://www.pmi.org/pmbok-guide-standards/foundational/pmbok/sixth-edition" target="_blank" rel="noopener">PMBOK</a>是PMI公布的官方材料之一。本身是需要收费的，但是总有热心网友把资料共享出来。于是网上有许多个版本，收费版、加密版或者强制关注才能下载版等等，眼花缭乱。辗转多个站点后才找到一份相对完整而合适的版本。</p><p>这里我想分享出来。我个人是支持对知识的收费，同时很反感附带许多条件的免费。所以有句话我是挺支持的–免费的可能比收费还贵。结果，一方面不希望有心思学习的伙伴被这些站点忽悠几个来回；另一方面我自己拿到后就不想独占，所谓独食难肥。于是乎分享出来。。</p><p>有兴趣的欢迎交流。</p><p>附件：<a href="/files/PMBOK-SIXTH-EDITION.pdf">PMBOK第六版中文版</a></p><a id="more"></a><p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/04/21/share-pmbok-6-cn/">http://www.thirteenyu.com/2018/04/21/share-pmbok-6-cn/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天被整烦了。&lt;/p&gt;
+&lt;p&gt;本来是想上网一本PMBOK，用作PMP的准备材料。冒出考这个项目的想法也比较任性，而且碰巧最近在项目管理上遇到一些难题也需要丰富些理论知识。&lt;/p&gt;
+&lt;p&gt;虽然最终找到了，但过程真的是越找越气。&lt;a href=&quot;https://www.pmi.org/pmbok-guide-standards/foundational/pmbok/sixth-edition&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PMBOK&lt;/a&gt;是PMI公布的官方材料之一。本身是需要收费的，但是总有热心网友把资料共享出来。于是网上有许多个版本，收费版、加密版或者强制关注才能下载版等等，眼花缭乱。辗转多个站点后才找到一份相对完整而合适的版本。&lt;/p&gt;
+&lt;p&gt;这里我想分享出来。我个人是支持对知识的收费，同时很反感附带许多条件的免费。所以有句话我是挺支持的–免费的可能比收费还贵。结果，一方面不希望有心思学习的伙伴被这些站点忽悠几个来回；另一方面我自己拿到后就不想独占，所谓独食难肥。于是乎分享出来。。&lt;/p&gt;
+&lt;p&gt;有兴趣的欢迎交流。&lt;/p&gt;
+&lt;p&gt;附件：&lt;a href=&quot;/files/PMBOK-SIXTH-EDITION.pdf&quot;&gt;PMBOK第六版中文版&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="分享" scheme="http://www.thirteenyu.com/tags/%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="PMP" scheme="http://www.thirteenyu.com/tags/PMP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>UNIX进程控制</title>
+    <link href="http://www.thirteenyu.com/2018/04/20/tech-apue-process-control/"/>
+    <id>http://www.thirteenyu.com/2018/04/20/tech-apue-process-control/</id>
+    <published>2018-04-20T13:29:15.000Z</published>
+    <updated>2018-12-16T17:19:50.840Z</updated>
+    
+    <content type="html"><![CDATA[<p>涉及内容：进程标识、竞争条件、僵尸进程</p><p>这一章描述UNIX内饰如何进行进程控制。程序的执行实例被称为进程（Process）。程序（Program）是一个存储在磁盘上某个目录中的可执行文件。</p><p>不废话，直接进入主题。</p><a id="more"></a><h2 id="进程标识"><a href="#进程标识" class="headerlink" title="进程标识"></a>进程标识</h2><blockquote><p>每个进程都有一个非负整型表示的<strong>唯一</strong>进程ID。</p></blockquote><p>虽然进程ID是唯一的，但是其可以被复用。大多数UNIX系统实现延迟复用算法，使得赋予新建进程的ID不同于最近终止进程所使用的ID。</p><p>系统中存在一些专用进程，如：</p><ul><li>ID为0的进程通常是调度进程，称为交换进程（swapper）。该进程是内核的一部分。</li><li>ID为1的进程通常是init进程，在自举过程结束时由内核调用。init进程决不会终止。它是一个普通的用户进程，非系统进程，但是它以超级用户特权运行。</li><li>某些系统中，ID为2的进程是页守护进程，负责支持虚拟存储器系统的分页操作。</li></ul><h2 id="子进程"><a href="#子进程" class="headerlink" title="子进程"></a>子进程</h2><h4 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h4><p>一个现有的进程可以调用<code>fork</code>函数创建一个新进程。由fork创建的新进程被称为子进程。<br><code>fork</code>函数被调用一次，但返回两次：子进程的返回值是0，父进程的返回值是新建子进程的进程ID。<br>子进程和父进程继续执行<code>fork</code>调用之后的指令。子进程是父进程的副本。父进程和子进程并不共享存储空间部分，但共享正文段。<br><img src="/2018/04/20/tech-apue-process-control/apue-pc-01.png" alt="" width="200" height="260"><br>针对存储空间副本的优化，现在使用了写时复制（Copy-On-Write，COW）技术。</p><h4 id="文件共享"><a href="#文件共享" class="headerlink" title="文件共享"></a>文件共享</h4><p>TBA</p><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ol><li><a href="https://www.zhihu.com/question/21535820" target="_blank" rel="noopener">进程和线程有什么区别？</a></li><li><a href="tps://baike.baidu.com/item/进程" target="_blank" rel="noopener">百度百科</a>：进程（Process）是计算机中的程序关于某数据集合上的一次运行活动，是系统进行资源分配和调度的基本单位，是操作系统结构的基础。</li></ol><p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/04/20/tech-apue-process-control/">http://www.thirteenyu.com/2018/04/20/tech-apue-process-control/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;涉及内容：进程标识、竞争条件、僵尸进程&lt;/p&gt;
+&lt;p&gt;这一章描述UNIX内饰如何进行进程控制。程序的执行实例被称为进程（Process）。程序（Program）是一个存储在磁盘上某个目录中的可执行文件。&lt;/p&gt;
+&lt;p&gt;不废话，直接进入主题。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://www.thirteenyu.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="读书" scheme="http://www.thirteenyu.com/tags/%E8%AF%BB%E4%B9%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>深入探究ElasticSearch节点管理</title>
+    <link href="http://www.thirteenyu.com/2018/04/19/es-node-management/"/>
+    <id>http://www.thirteenyu.com/2018/04/19/es-node-management/</id>
+    <published>2018-04-19T13:54:49.000Z</published>
+    <updated>2018-12-16T17:19:50.794Z</updated>
+    
+    <content type="html"><![CDATA[<p>ElasticSearch其实是一个很棒的分布式学习案例。尚记得大约两年前在项目中对ES进行源码的阅读以及修改，也算是第一次阅读优秀的开源项目。当时就被ES精巧的实现折服。或许是第一次阅读好代码，毕竟当时刚毕业，还没真正写过几个项目就开始这个项目。所以也是打开了自己对系统、编程的新的理解大门。在当时已经是比较热门的分布式搜索引擎，经过两年后热度有增无减，确实是比较难得的。</p><p>当时比较令我惊讶的是”无master”的方式。也就是每个节点都可以接受查询请求。这个为什么觉得惊讶，是因为感觉到了这样的结构，应该是没有边界的。也就是只要有机器，部署一套ES就能索引无限的数据，而且结构足够简单。可能说得过大了，但当时给我的就是这么惊讶。对比Hive、HBase这些类似的，都是需要一个master，要么是HiveServer2，要么是HMaster。个人愚见，如果存在master的分布式结构，master都可能是一个瓶颈，而这样的分布式不够完备。而ES却不是。</p><p>不过ES后来也发展出master，但没看懂是什么。上一次阅读源码，针对的是<a href="https://www.elastic.co/blog/elasticsearch-1-7-1-and-1-6-2-released" target="_blank" rel="noopener">ES 1.7.1</a>。而现在的最新版本到了<a href="https://www.elastic.co/guide/en/elasticsearch/reference/6.2/release-notes-6.2.4.html" target="_blank" rel="noopener">ES 6.2.4</a>，中间已经不知道发生了多少变化。在互联网行业，2年足以改变许多，小米都经历了过山车式的发展对不？ES的发展其实也蛮值得学习的，一开始虽然工作看似普通（在lucene基础上增加分布式的支持），后来发展衍生出一整套解决方案（例如ELK）。对开发来说、对做产品来说都是一个很好的启发。</p><p>而接下来先会对新版的节点管理进行学习。我还会持续关注ES以及对应的演进，其他相关的我也在学习中。</p><a id="more"></a><h2 id="ES节点综述"><a href="#ES节点综述" class="headerlink" title="ES节点综述"></a>ES节点综述</h2><ul><li>ES正常运行时只能有一个master(即leader)，多于1个时会发生脑裂。</li><li>数据节点会存储分配在该node上的shard的数据并负责这些shard的写入、查询等。</li><li>任何一个集群内的node都可以执行任何请求，其会负责将请求转发给对应的node进行处理。</li></ul><h2 id="节点管理"><a href="#节点管理" class="headerlink" title="节点管理"></a>节点管理</h2><h4 id="ES集群构成"><a href="#ES集群构成" class="headerlink" title="ES集群构成"></a>ES集群构成</h4><p><img src="/2018/04/19/es-node-management/es-nm-01.jpg" alt="" width="400" height="350"> </p><p>Node可以有不同的类型，通过以下配置，可以产生四种不同类型的Node：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">conf/elasticsearch.yml:</span></span><br><span class="line">    <span class="string">node.master:</span> <span class="literal">true</span><span class="string">/false</span></span><br><span class="line">    <span class="string">node.data:</span> <span class="literal">true</span><span class="string">/false</span></span><br></pre></td></tr></table></figure><h4 id="节点发现"><a href="#节点发现" class="headerlink" title="节点发现"></a>节点发现</h4><blockquote><p>ZenDiscovery: 是ES自己实现的一套用于节点发现和选主等功能的模块，没有依赖Zookeeper等工具</p></blockquote><p>节点到集群中的每个节点建立一条边，当整个集群所有的node形成一个联通图时，所有节点都可以知道集群中有哪些节点，不会形成孤岛。</p><p>节点与节点间互相发现或确认的方式包括两种：</p><ul><li>Ping：节点通过发现机制找寻其他节点</li><li>Unicast：单播发现需要一组hosts作为路由。官方推荐这一组hosts都应该配置成master-eligible节点。<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">conf/elasticsearch.yml:</span></span><br><span class="line">    <span class="string">discovery.zen.ping.unicast.hosts:</span> <span class="string">[1.1.1.1,</span> <span class="number">1.1</span><span class="number">.1</span><span class="number">.2</span><span class="string">,</span> <span class="number">1.1</span><span class="number">.1</span><span class="number">.3</span><span class="string">]</span></span><br></pre></td></tr></table></figure></li></ul><h4 id="Master选举"><a href="#Master选举" class="headerlink" title="Master选举"></a>Master选举</h4><p>集群中可能会有多个master-eligible node，此时就要进行master选举，保证只有一个当选master。如果有多个node当选为master，则集群会出现脑裂，脑裂会破坏数据的一致性，导致集群行为不可控，产生各种非预期的影响。</p><p>选举过程：</p><ul><li><strong>发起</strong>：由master-eligible节点发起。</li><li><strong>选举谁</strong><ul><li>先按clusterStateVersion进行排序：当clusterStateVersion越大，优先级越高；Master当选后，就会以这个版本的clusterState为基础进行更新；</li><li>再按节点的Id进行排序：节点的Id越小，优先级越高；为了让选举结果尽可能稳定，不要出现都想当master而选不出来的情况；</li></ul></li><li><strong>选举结束</strong>：<strong>TBA</strong></li><li><strong>保证不脑裂</strong>：目前的ES 6.2还存在问题。master候选人需要等待多数派节点进行join后才能真正成为master，就是为了保证这个master得到了多数派的认可。但在选举过程中，一个Node可能不仅仅投一票。</li></ul><h2 id="错误监测"><a href="#错误监测" class="headerlink" title="错误监测"></a>错误监测</h2><ol><li><p>MasterFaultDetection与NodesFaultDetection<br>类似心跳的机制，有两类错误检测：一类是Master定期检测集群内其他的Node；另一类是集群内其他的Node定期检测当前集群的Master。</p></li><li><p>rejoin<br>Master发现自己已经不满足多数派条件(&gt;=minimumMasterNodes)了，需要主动退出master状态(退出master状态并执行rejoin)，以避免脑裂的发生。</p></li></ol><h2 id="集群扩缩容"><a href="#集群扩缩容" class="headerlink" title="集群扩缩容"></a>集群扩缩容</h2><ul><li>数据节点扩容</li><li>数据节点缩容</li><li>Master节点扩容</li><li>Master节点缩容</li></ul><h2 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h2><ul><li><a href="https://zhuanlan.zhihu.com/p/34858035" target="_blank" rel="noopener">Elasticsearch分布式一致性原理剖析(一)-节点篇</a></li><li><a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-discovery-zen.html" target="_blank" rel="noopener">Zen Discovery</a></li></ul><p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/04/19/es-node-management/">http://www.thirteenyu.com/2018/04/19/es-node-management/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;ElasticSearch其实是一个很棒的分布式学习案例。尚记得大约两年前在项目中对ES进行源码的阅读以及修改，也算是第一次阅读优秀的开源项目。当时就被ES精巧的实现折服。或许是第一次阅读好代码，毕竟当时刚毕业，还没真正写过几个项目就开始这个项目。所以也是打开了自己对系统、编程的新的理解大门。在当时已经是比较热门的分布式搜索引擎，经过两年后热度有增无减，确实是比较难得的。&lt;/p&gt;
+&lt;p&gt;当时比较令我惊讶的是”无master”的方式。也就是每个节点都可以接受查询请求。这个为什么觉得惊讶，是因为感觉到了这样的结构，应该是没有边界的。也就是只要有机器，部署一套ES就能索引无限的数据，而且结构足够简单。可能说得过大了，但当时给我的就是这么惊讶。对比Hive、HBase这些类似的，都是需要一个master，要么是HiveServer2，要么是HMaster。个人愚见，如果存在master的分布式结构，master都可能是一个瓶颈，而这样的分布式不够完备。而ES却不是。&lt;/p&gt;
+&lt;p&gt;不过ES后来也发展出master，但没看懂是什么。上一次阅读源码，针对的是&lt;a href=&quot;https://www.elastic.co/blog/elasticsearch-1-7-1-and-1-6-2-released&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ES 1.7.1&lt;/a&gt;。而现在的最新版本到了&lt;a href=&quot;https://www.elastic.co/guide/en/elasticsearch/reference/6.2/release-notes-6.2.4.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ES 6.2.4&lt;/a&gt;，中间已经不知道发生了多少变化。在互联网行业，2年足以改变许多，小米都经历了过山车式的发展对不？ES的发展其实也蛮值得学习的，一开始虽然工作看似普通（在lucene基础上增加分布式的支持），后来发展衍生出一整套解决方案（例如ELK）。对开发来说、对做产品来说都是一个很好的启发。&lt;/p&gt;
+&lt;p&gt;而接下来先会对新版的节点管理进行学习。我还会持续关注ES以及对应的演进，其他相关的我也在学习中。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="分布式" scheme="http://www.thirteenyu.com/tags/%E5%88%86%E5%B8%83%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java并发编程实践-笔记02</title>
+    <link href="http://www.thirteenyu.com/2018/04/18/tech-java-concurrency-in-practice-02/"/>
+    <id>http://www.thirteenyu.com/2018/04/18/tech-java-concurrency-in-practice-02/</id>
+    <published>2018-04-18T14:39:04.000Z</published>
+    <updated>2018-12-16T17:19:50.844Z</updated>
+    
+    <content type="html"><![CDATA[<p>先回顾一下，已经有4天没更新了。其实上周五有准备要写一篇的，关于最近的面试。但是还没定下来就没敢随便发出来。而这周开始刚好又多个项目告急，实在没抽出时间更新。</p><p>今天想着无论如何都要更新一篇了。虽晚但也要完成。</p><p>主题也是读书笔记，关于线程带来的风险。</p><a id="more"></a><h4 id="线程带来许多好处，但同时其风险也是显然的"><a href="#线程带来许多好处，但同时其风险也是显然的" class="headerlink" title="线程带来许多好处，但同时其风险也是显然的"></a>线程带来许多好处，但同时其风险也是显然的</h4><ol><li>安全性问题<ul><li>线程安全性可能是非常复杂的。在没有充足同步的情况下，多个线程中的操作执行顺序是不可预测的，甚至会产生奇怪的结果。</li><li>竞态条件(Race Condition)是一种常见的并发安全问题。</li></ul></li><li>活跃性问题<ul><li>活跃性关注的目标，即”某件正确的事情最终会发生”。但某个操作无法继续执行下去时，就会发生活跃性问题。</li><li>串行程序中，活跃性问题的形式之一就是无意中造成的无限循环。</li><li>线程中，则是另外的表现形式，例如死锁：线程A等待线程B释放其持有的资源，而线程B永远都不会释放。  </li></ul></li><li>性能问题<ul><li>包含有单线程程序相同的性能问题</li><li>多线程还带来新的问题：上下文切换(Context Switch)操作的开销；同步机制的开销，增加共享内存总线的同步流量；</li></ul></li></ol><h4 id="并发性错误，通常是难以分析的"><a href="#并发性错误，通常是难以分析的" class="headerlink" title="并发性错误，通常是难以分析的"></a>并发性错误，通常是难以分析的</h4><ol><li>依赖于不同线程的事件发生时序，难以重现</li></ol><p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/04/18/tech-java-concurrency-in-practice-02/">http://www.thirteenyu.com/2018/04/18/tech-java-concurrency-in-practice-02/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;先回顾一下，已经有4天没更新了。其实上周五有准备要写一篇的，关于最近的面试。但是还没定下来就没敢随便发出来。而这周开始刚好又多个项目告急，实在没抽出时间更新。&lt;/p&gt;
+&lt;p&gt;今天想着无论如何都要更新一篇了。虽晚但也要完成。&lt;/p&gt;
+&lt;p&gt;主题也是读书笔记，关于线程带来的风险。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://www.thirteenyu.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="读书" scheme="http://www.thirteenyu.com/tags/%E8%AF%BB%E4%B9%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>UNIX文件I/O</title>
+    <link href="http://www.thirteenyu.com/2018/04/12/tech-apue-file-io/"/>
+    <id>http://www.thirteenyu.com/2018/04/12/tech-apue-file-io/</id>
+    <published>2018-04-12T05:44:00.000Z</published>
+    <updated>2018-12-16T17:19:50.835Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天说下文件这个主题。</p><p>为什么说到这个？一个重要的原因，UNIX几乎把所有东西都看成文件对待。这也是UNIX简洁的一个体现，可以用一套理念理解系统内大部分原理。另外，越常见越常用的东西其实越难掌握可理解。所谓大道至简，而看似简单其实并不代表容易。</p><p>接下来会先描述内核读取文件的数据结构，再总结文件操作函数等。在APUE中，文件I/O这章是先通过文件函数引入进行说明的，这种组织方式便于实际应用以及开发。而本文作为总结就没有按这种方式。</p><a id="more"></a><h2 id="I-O数据结构"><a href="#I-O数据结构" class="headerlink" title="I/O数据结构"></a>I/O数据结构</h2><p><img src="/2018/04/12/tech-apue-file-io/apue-fio-01.png" alt="" width="550" height="300"> </p><p>内核通过3种数据结构表示打开的文件：</p><ol><li>每个进程的<strong>进程表</strong>中，包含一张打开的文件描述符表，每项包括：<ul><li>文件描述符</li><li>文件描述符标识</li><li>指向<strong>文件表</strong>的指针</li></ul></li><li>内核为所有打开的文件维持一张<strong>文件表</strong>，每项包括：<ul><li>文件状态标识：读、写、添写、同步和非阻塞等</li><li>当前文件偏移量</li><li>指向该文件<strong>v节点表</strong>项的指针</li></ul></li><li>每个打开的文件或设备都有一个<strong>v节点(v-node)结构</strong>，其包括：<ul><li>文件类型</li><li>对文件进行各种操作函数的指针</li><li>i节点(i-node，索引节点)<ul><li>文件的所有者</li><li>文件长度</li><li>指向文件实际数据块在磁盘上所在位置的指针</li></ul></li></ul></li></ol><h2 id="文件描述符"><a href="#文件描述符" class="headerlink" title="文件描述符"></a>文件描述符</h2><p>对于内核而言，所有打开的文件都是通过文件描述符引用。</p><ul><li>文件描述符是一个<strong>非负整数</strong>。</li><li>当打开一个现有文件或者创建一个新文件时，内核向进程返回一个文件描述符。</li></ul><p>按照惯例，文件描述符0、1和2会被UNIX系统shell默认关联</p><ul><li>文件描述符0：标准输入</li><li>文件描述符1：标准输出</li><li>文件描述符2：标准错误</li></ul><p>通过<code>open</code>和<code>openat</code>函数返回的文件描述符，一定是<strong>最小的未用描述符值</strong>。</p><p>进程终止时，内核自动关闭它打开的所有文件。</p><h2 id="文件偏移量"><a href="#文件偏移量" class="headerlink" title="文件偏移量"></a>文件偏移量</h2><p>每个打开文件都有一个与其相关联的”当前文件偏移量”。通常是一个非负整数，用以度量从文件开始处计算的字节数。</p><p><code>lseek</code>可以显式地为一个打开文件设置偏移量。</p><ul><li>如果一个文件描述符指向的是一个管道、FIFO或网络套接字，则<code>lseek</code>返回-1，并将errno设置为ESPIPE。</li><li><code>lseek</code>仅将当前的文件偏移量记录在内核中，并不引起任何I/O操作。</li></ul><p>文件偏移量可以大于文件的当前长度。在这种情况下，对该文件的下一次写将加长该文件，并在文件中构成一个<strong>空洞</strong>。</p><ul><li>位于文件中但没有写过的字节都被读为0。</li><li>文件中的空洞并不要求在磁盘上占用存储区。</li></ul><p>尽管可以实现64位文件偏移量，但能否创建一个大于2GB(2^31 -1字节)的文件依赖于底层文件系统的类型。</p><h2 id="文件共享"><a href="#文件共享" class="headerlink" title="文件共享"></a>文件共享</h2><p><img src="/2018/04/12/tech-apue-file-io/apue-fio-02.png" alt="" width="550" height="360"> </p><p>每个进程都获得自己的文件表项</p><ul><li>每个进程都有它自己的对该文件的当前偏移量</li><li><code>lseek</code>函数只修改文件表项中的当前文件偏移量，不进行任何I/O操作</li></ul><h2 id="原子操作"><a href="#原子操作" class="headerlink" title="原子操作"></a>原子操作</h2><p>一般而言，原子操作指的是由多步组成的一个操作。如果该操作原子地执行，则要么执行完所有步骤，要么一步也不执行。不可能只执行所有步骤的一个子集。</p><h2 id="缓冲区"><a href="#缓冲区" class="headerlink" title="缓冲区"></a>缓冲区</h2><p>传统的UNIX系统实现在内核中设有<strong>缓冲区高速缓存</strong>或<strong>页高速缓存</strong>，大多数磁盘I/O都通过缓冲区进行。</p><p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/04/12/tech-apue-file-io/">http://www.thirteenyu.com/2018/04/12/tech-apue-file-io/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天说下文件这个主题。&lt;/p&gt;
+&lt;p&gt;为什么说到这个？一个重要的原因，UNIX几乎把所有东西都看成文件对待。这也是UNIX简洁的一个体现，可以用一套理念理解系统内大部分原理。另外，越常见越常用的东西其实越难掌握可理解。所谓大道至简，而看似简单其实并不代表容易。&lt;/p&gt;
+&lt;p&gt;接下来会先描述内核读取文件的数据结构，再总结文件操作函数等。在APUE中，文件I/O这章是先通过文件函数引入进行说明的，这种组织方式便于实际应用以及开发。而本文作为总结就没有按这种方式。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://www.thirteenyu.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="读书" scheme="http://www.thirteenyu.com/tags/%E8%AF%BB%E4%B9%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>理解进程间通信</title>
+    <link href="http://www.thirteenyu.com/2018/04/11/tech-apue-process-communcation/"/>
+    <id>http://www.thirteenyu.com/2018/04/11/tech-apue-process-communcation/</id>
+    <published>2018-04-10T16:57:59.000Z</published>
+    <updated>2018-12-16T17:19:50.837Z</updated>
+    
+    <content type="html"><![CDATA[<p>进程、线程一类的，其实接触得挺早，但是没有深入使用。最早认识多进程多线程，是在学校网络中心参加一个并行计算比赛时了解的。但是建立的认识就是MPI、OPENMP之类的。然后没了解多久，就开始了GPU和PHI的调用了。</p><p>真要自己说清楚进程线程的区别，还真是比较难。一方面很早接触就往应用上走，没有深入了解实现原理；另一方面轮子封装得实在是好，一些坑早就被趟平了，也就没机会接触到。</p><p>然而这又是了解当今多核计算必不可缺的一环，短板还是得补上。</p><p>以前对进程通信方式的理解，就是两种，共享内存与消息同步。共享内存相当于定义共同访问空间；消息同步相当于发布者订阅者一类的方式。</p><p>不过这个理解还是比较狭隘的，或者还是十分简陋的。针对上述的理解，现在的我会质疑，共享内存怎么在进程间实现？那管道一类的方式又是属于哪种通信类型？事实上还不能简单以两种方式总结进程通信方式。</p><p>结合网上的资料以及手中的UNIX环境高级编程(APUE)，以下是本人对进程通信的新的理解。</p><a id="more"></a><h2 id="进程通信方式"><a href="#进程通信方式" class="headerlink" title="进程通信方式"></a>进程通信方式</h2><ol><li>管道（pipe）</li><li>命名管道（FIFO）</li><li>信号（signal）</li><li>消息队列</li><li>共享内存</li><li>信号量</li><li>套接字（socket)</li></ol><h2 id="IPC方式详解"><a href="#IPC方式详解" class="headerlink" title="IPC方式详解"></a>IPC方式详解</h2><blockquote><p>InterProcess Communication -&gt; IPC</p></blockquote><h4 id="管道"><a href="#管道" class="headerlink" title="管道"></a>管道</h4><ol><li><p>在APUE中的描述：管道是UNIX系统IPC的最古老的方式，所有UNIX都支持。</p></li><li><p>特征</p><ul><li>历史上，曾经是半双工的，也即数据只能往一个方向流动；</li><li>管道智能在具有公共祖先的两个进程之间使用；</li></ul></li><li><p>示例</p><ul><li>下图来自APUE：<img src="/2018/04/11/tech-apue-process-communcation/apue-ipc-01.png" alt="" width="200" height="100"> <img src="/2018/04/11/tech-apue-process-communcation/apue-ipc-02.png" alt="" width="200" height="100"> <img src="/2018/04/11/tech-apue-process-communcation/apue-ipc-03.png" alt="" width="200" height="100"></li><li>截图展示了管道使用的方式：<ul><li>通常，一个管道由一个进程创建，在进程调用fork之后，这个管道就能在父进程和子进程之间使用了。</li><li>这里同时还提到一个概念：协同进程，当一个过滤程序既产生某个过滤程序的输入，又读取改过滤程序的输出时，它就变成了协同进程(coprocess)。 <img src="/2018/04/11/tech-apue-process-communcation/apue-ipc-04.png" alt="" width="200" height="100"></li></ul></li></ul></li><li><p>理解</p></li></ol><ul><li>管道为什么不能在非公共祖先的进程之间使用？由于管道没有名字的原因，所以不能跨进程的地址空间进行使用。这里这句话不是绝对的，因为从技术上可以在进程间传递管道的描述符。</li><li>那在命令行中常用的管道(命令)<code>|</code>又是什么意思？实际上是每个单独的程序(进程)与内核产生的管道(通过标准输入0和标准输出1)实现通信，然后内核把上一条命令的标准输出与下一条命令的标准输入关联。而并非两个进程直接相关的管道。</li></ul><h4 id="命名管道"><a href="#命名管道" class="headerlink" title="命名管道"></a>命名管道</h4><ol><li><p>区别于管道，命名管道支持不相关进程的通信。</p></li><li><p>FIFO实际是一种文件类型。FIFO的路径名存在于文件系统中。</p></li><li><p>用途</p><ul><li>shell命令使用FIFO将数据从一条管道传送到另一条时，无需创建中间临时文件；</li><li>客户进程-服务器进程应用程序中，FIFO用作汇聚点，在客户进程和服务器进程二者之间传递数据；</li></ul></li><li><p>理解</p></li></ol><ul><li>如何实现命名管道？从其名字看，关键就在于命名，并把命名共享到需要通信的两者或多者之间。而同时注意到FIFO是一种文件类型，所以其也有绝对路径相对路径的说法。本人姑且粗鄙地理解成通过一个txt文件传递信息，但是不需要真正写到txt文件上都可以进行通信。</li></ul><h4 id="XSI-IPC"><a href="#XSI-IPC" class="headerlink" title="* XSI IPC"></a>* XSI IPC</h4><ol><li><p>其包括<strong>消息队列</strong>、<strong>信号量</strong>以及<strong>共享存储器</strong></p></li><li><p>此类的IPC都用一个非负整数的标识符加以引用</p><ul><li>标识符是IPC对象的内部名：当一个IPC结构被创建，然后又被删除时，与这种结构相关的标识符连续加1，直到达到一个整型数的最大正值，然后又回转到0；</li><li>为使多个合作进程能够在同一IPC对象上汇聚，需要提供一个外部命名方案：每个IPC对象斗鱼一个键关联，将这个键作为该对象的外部名。方式如下：<ul><li>存储标识符在某处(如一个文件)以便客户进程取用</li><li>在一个公用头文件中定义一个客户进程和服务器进程都认可的键</li><li>调用<code>ftok</code>把得到认同的一个路径名和项目ID转换成一个键</li></ul></li></ul></li><li><p>理解</p></li></ol><ul><li>有点像命名管道嘛。。就是提供不一样的数据结构。</li><li>XSI IPC的一个基本问题是，在系统范围内起作用的，没有引用计数。</li><li>XSI IPC的另一个问题是，在文件系统中没有名字。</li></ul><h6 id="消息队列"><a href="#消息队列" class="headerlink" title="消息队列"></a>消息队列</h6><ol><li>消息队列是消息的链接表，存储在内核中，由消息队列标识符标识</li></ol><h6 id="信号量"><a href="#信号量" class="headerlink" title="信号量"></a>信号量</h6><ol><li><p>信号量是一个计数器，用于为多个进程提供对共享数据对象的访问</p></li><li><p>为了正确的实现信号量，信号量的测试以及减1操作应当是原子操作，为此信号量通常是在内核中实现的</p></li></ol><h6 id="共享存储器"><a href="#共享存储器" class="headerlink" title="共享存储器"></a>共享存储器</h6><ol><li><p>共享存储允许两个或多个进程共享一个给定的存储区</p></li><li><p>最快的IPC，无需在客户进程和服务器进程之间复制</p></li><li><p>唯一窍门，在多个进程之间<strong>同步</strong>访问一个给定的存储区</p><ul><li>信号量</li><li>锁</li><li>互斥量 </li></ul></li></ol><h2 id="参考内容"><a href="#参考内容" class="headerlink" title="参考内容"></a>参考内容</h2><ol><li><a href="https://blog.csdn.net/gatieme/article/details/50908749" target="_blank" rel="noopener">Linux进程间通信的几种方式总结–linux内核剖析（七）</a></li></ol><p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/04/11/tech-apue-process-communcation/">http://www.thirteenyu.com/2018/04/11/tech-apue-process-communcation/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;进程、线程一类的，其实接触得挺早，但是没有深入使用。最早认识多进程多线程，是在学校网络中心参加一个并行计算比赛时了解的。但是建立的认识就是MPI、OPENMP之类的。然后没了解多久，就开始了GPU和PHI的调用了。&lt;/p&gt;
+&lt;p&gt;真要自己说清楚进程线程的区别，还真是比较难。一方面很早接触就往应用上走，没有深入了解实现原理；另一方面轮子封装得实在是好，一些坑早就被趟平了，也就没机会接触到。&lt;/p&gt;
+&lt;p&gt;然而这又是了解当今多核计算必不可缺的一环，短板还是得补上。&lt;/p&gt;
+&lt;p&gt;以前对进程通信方式的理解，就是两种，共享内存与消息同步。共享内存相当于定义共同访问空间；消息同步相当于发布者订阅者一类的方式。&lt;/p&gt;
+&lt;p&gt;不过这个理解还是比较狭隘的，或者还是十分简陋的。针对上述的理解，现在的我会质疑，共享内存怎么在进程间实现？那管道一类的方式又是属于哪种通信类型？事实上还不能简单以两种方式总结进程通信方式。&lt;/p&gt;
+&lt;p&gt;结合网上的资料以及手中的UNIX环境高级编程(APUE)，以下是本人对进程通信的新的理解。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://www.thirteenyu.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="读书" scheme="http://www.thirteenyu.com/tags/%E8%AF%BB%E4%B9%A6/"/>
+    
+  </entry>
+  
+</feed>

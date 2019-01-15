@@ -1,0 +1,170 @@
+<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Win10下安装debian共存 · 十三羽</title><meta name="description" content="Win10下安装debian共存 - Tobin"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110577953-1"></script><script type="text/javascript">window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-110577953-1');</script></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/CV" target="_self" class="nav-list-link">CV</a></li><li class="nav-list-item"><a href="/about" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">Win10下安装debian共存</h1><div class="post-info">Mar 24, 2017</div><div class="post-content"><p>曾经我也是个倒腾Linux系统安装的人。那时还是学生，对这个命令行像黑客一样的东西特别来劲。通常就花一个晚上到一天不等，就折腾个系统安装。看来有点浪费，不过折腾完系统的安装，现在在Linux上装啥都不怕了（●&gt;∀&lt;●）。循环依赖、源、网络配置、无人值守什么的都算是入了个门。不过自从用了Mac后，距离操作系统更远了，所以就没有怎么搞过。加上Linux本身又比较折腾，有时候不方便也没有那么空闲想来搞一搞。</p>
+<p>最近某天，逛网的时候发现<a href="http://droidyue.com/blog/2016/08/22/before-you-buy-raspberry-pi/" target="_blank" rel="noopener">树莓派入手指南</a>，心里很是激动。又唤醒起学生时的兴奋，忽然间燃起来要搞它一搞=≡Σ((( つ•̀ω•́)つ。树莓派不贵，而且感觉比阿里云那些自定义程度更高了。于是就开始在网上搜教程，看了一圈发现技能可能生疏了，得重新拿回。装系统感觉像是一切的开端，那就搞吧。</p>
+<p>于是在某天下班后速速回家装机。以前玩的时候还是笔记本、Win7加Linux各种发行版。但是现在Win10有secure boot、BIOS又有UEFI之类的东西，对安装Linux就是各种拦截哇。差点就连安装盘都进不去。满心欢喜装完，结果发现开不了机、卡在初始化后，看来不强行搞一番还对不起装机小能手的称号。</p>
+<p>以下是记录时刻。太久没折腾，感觉好多都忘了。虽然装系统的机会不多了，但作为学生时代的情怀还是记录一发好了。</p>
+<a id="more"></a>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">—分割线—</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>目前在dell 8900上装有win10，ubuntu安装失败，似乎安装时识别不了硬盘。<br>debian是自己曾经用过的。也想过装gentoo，太折腾搞不定，Fedora的话也挺好，不过就是不想装。</p>
+<h2 id="前置准备"><a href="#前置准备" class="headerlink" title="前置准备"></a>前置准备</h2><ol>
+<li><p>抗secure boot</p>
+<blockquote>
+<p>参考：<a href="http://www.jianshu.com/p/2eebd6ad284d" target="_blank" rel="noopener">http://www.jianshu.com/p/2eebd6ad284d</a></p>
+</blockquote>
+<ul>
+<li>开机时修改secure boot设置<ul>
+<li>F2进入BIOS设置，关闭secure boot</li>
+<li>F12进入一次性启动选项，配置EFT ON，secure boot OFF的方式</li>
+</ul>
+</li>
+<li>win10需要先腾出空的磁盘</li>
+<li>禁用快速启动：<code>win + x</code> -&gt; 电源选项 -&gt; 选择电源按钮功能 -&gt; 更改当前不可用的设置 -&gt; 去掉“启用快速启动(推荐)”的勾选</li>
+</ul>
+</li>
+<li>刻录U盘<ul>
+<li>下载debian镜像<ul>
+<li>官方源也可以，不过小水管不够快。</li>
+<li>清华源：<a href="https://mirrors.tuna.tsinghua.edu.cn/debian-cd/current/amd64/iso-cd/debian-8.7.1-amd64-CD-1.iso" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/debian-cd/current/amd64/iso-cd/debian-8.7.1-amd64-CD-1.iso</a></li>
+</ul>
+</li>
+<li>使用UltraISO刻录即可</li>
+</ul>
+</li>
+<li>特殊重启<ul>
+<li>设置 -&gt; 更新与安全 -&gt; 恢复 -&gt; 立即重启 -&gt; 疑难解答 -&gt; 高级选项 -&gt; 启动设置 -&gt; 立即重启</li>
+</ul>
+</li>
+<li>F12进入U盘安装环境</li>
+</ol>
+<h2 id="装系统"><a href="#装系统" class="headerlink" title="装系统"></a>装系统</h2><ol>
+<li><p>按步就班</p>
+<ul>
+<li>配置语言/地区：English/Hong Kong</li>
+<li>配置键盘：American English</li>
+<li>配置网络：<strong>暂时不配</strong>。虽然后面发现此时不配太坑了，不过Linux就是折腾不惜的，不慌，爱选啥选啥。</li>
+<li><p>配置磁盘</p>
+<ul>
+<li>必须选自定义的</li>
+<li>必须注意它推荐的配置：给我的/才配置10G，装完才注意到，算了。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 给个自己理想的磁盘空间设计</span><br><span class="line">/     30G，不介意可以更大</span><br><span class="line">swap  8G，跟内存同样大小</span><br><span class="line">/boot 300M，腾多点给多几个内核</span><br><span class="line">/home 剩下多少是多少</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>配置用户</p>
+</li>
+<li>…</li>
+</ul>
+</li>
+<li>重启<ul>
+<li>等待安装完就可以重启了</li>
+<li>然后重启可能失败，也是因为前面任性，暂时不配网络导致该有的包缺失了<ul>
+<li>网卡驱动没装</li>
+<li>显卡驱动不正常</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="填坑"><a href="#填坑" class="headerlink" title="填坑"></a>填坑</h2><ol>
+<li>CLI方式进入系统<ul>
+<li>开机进入Debian的GRUB -&gt; e -&gt; 在<code>quiet</code>后加上<code>nomodeset</code></li>
+<li>F10</li>
+</ul>
+</li>
+<li><p>配置网络</p>
+<blockquote>
+<p>参考：<a href="https://wiki.debian.org/NetworkConfiguration" target="_blank" rel="noopener">https://wiki.debian.org/NetworkConfiguration</a></p>
+</blockquote>
+<ul>
+<li><p>修改文件：<code>/etc/network/interfaces</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">auto eth0</span><br><span class="line">allow-hotplug eth0</span><br><span class="line">iface eth0 inet dhcp</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重启网络以启用服务：<code>service networking restart</code></p>
+</li>
+</ul>
+</li>
+<li><p>配置镜像源</p>
+<blockquote>
+<p>参考：<a href="https://wiki.debian.org/SourcesList" target="_blank" rel="noopener">https://wiki.debian.org/SourcesList</a></p>
+</blockquote>
+<ul>
+<li>修改文件：<code>/etc/apt/sources.list</code><ul>
+<li>注释掉CD相关的</li>
+<li>解注释系统版本相关的</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>配置WIFI</p>
+<blockquote>
+<p>参考1：<a href="https://wiki.debian.org/WiFi/HowToUse" target="_blank" rel="noopener">https://wiki.debian.org/WiFi/HowToUse</a><br>参考2：<a href="https://wiki.debian.org/rtl819x#Debian_8_.22Jessie.22" target="_blank" rel="noopener">https://wiki.debian.org/rtl819x#Debian_8_.22Jessie.22</a></p>
+</blockquote>
+<ul>
+<li><p>添加软件源</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deb http://ftp.de.debian.org/debian jessie main</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装无线工具：<code>apt-get install wireless-tools</code></p>
+</li>
+<li>查看无线硬件：<code>lspci | grep Wireless</code></li>
+<li><p>添加软件源</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deb http://httpredir.debian.org/debian jessie main contrib non-free</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装驱动：<code>apt-get install firmware-realtek</code></p>
+</li>
+</ul>
+</li>
+<li><p>配置显卡</p>
+<blockquote>
+<p>参考1：<a href="https://wiki.debian.org/NvidiaGraphicsDrivers#jessie" target="_blank" rel="noopener">https://wiki.debian.org/NvidiaGraphicsDrivers#jessie</a><br>参考2：<a href="http://us.download.nvidia.com/XFree86/Linux-x86_64/340.65/README/supportedchips.html" target="_blank" rel="noopener">http://us.download.nvidia.com/XFree86/Linux-x86_64/340.65/README/supportedchips.html</a></p>
+</blockquote>
+<ul>
+<li><p>添加软件源，注意与其他版本驱动的软件源区别</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deb http://httpredir.debian.org/debian jessie main contrib non-free</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装驱动：<code>aptitude -r install linux-headers-$(uname -r|sed &#39;s,[^-]*-[^-]*-,,&#39;) nvidia-kernel-dkms</code></p>
+</li>
+<li>安装配置程序：<code>apt-get install nvidia-xconfig</code></li>
+<li>自动配置：<code>nvidia-xconfig</code></li>
+</ul>
+</li>
+<li><p>安装桌面</p>
+<blockquote>
+<p>参考：<a href="https://debian-handbook.info/browse/stable/sect.graphical-desktops.html" target="_blank" rel="noopener">https://debian-handbook.info/browse/stable/sect.graphical-desktops.html</a></p>
+</blockquote>
+<ul>
+<li>安装gnome：<code>apt-get install gnome</code></li>
+</ul>
+</li>
+</ol>
+<h2 id="配置windows引导"><a href="#配置windows引导" class="headerlink" title="配置windows引导"></a>配置windows引导</h2><ol>
+<li>在EFI时代，谁引导都没多大关系，因为入口是由EFI控制。windows引导、ubuntu引导似乎都没啥问题。</li>
+<li>修改好启动顺序即可</li>
+</ol>
+<h2 id="安装必备软件"><a href="#安装必备软件" class="headerlink" title="安装必备软件"></a>安装必备软件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">apt-get install vim</span><br><span class="line">apt-get install git</span><br><span class="line">apt-get install sudo</span><br><span class="line">apt-get install ssh # 安装后默认开机启动</span><br></pre></td></tr></table></figure>
+<h2 id="更多软件源"><a href="#更多软件源" class="headerlink" title="更多软件源"></a>更多软件源</h2><ul>
+<li><a href="https://mirrors.ustc.edu.cn/help/debian-multimedia.html" target="_blank" rel="noopener">https://mirrors.ustc.edu.cn/help/debian-multimedia.html</a></li>
+<li><a href="https://mirrors.ustc.edu.cn/help/debian-security.html" target="_blank" rel="noopener">https://mirrors.ustc.edu.cn/help/debian-security.html</a></li>
+<li><a href="https://mirrors.ustc.edu.cn/help/debian.html" target="_blank" rel="noopener">https://mirrors.ustc.edu.cn/help/debian.html</a></li>
+</ul>
+<p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2017/03/24/conf-debian-with-win10/">http://www.thirteenyu.com/2017/03/24/conf-debian-with-win10/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>
+</div></article></div></section><footer><div class="paginator"><a href="/2017/10/03/list-goods/" class="prev">上一篇</a><a href="/2016/12/23/op-frequent-shell/" class="next">下一篇</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'thirteenyu';
+var disqus_identifier = '2017/03/24/conf-debian-with-win10/';
+var disqus_title = 'Win10下安装debian共存';
+var disqus_url = 'http://www.thirteenyu.com/2017/03/24/conf-debian-with-win10/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//thirteenyu.disqus.com/count.js" async></script><div class="copyright"><p>Hosted by <a href="https://pages.github.com">Github Pages</a> / <a href="https://pages.coding.me">Coding Pages</a></p><p>© 2010 - 2019 <a href="http://www.thirteenyu.com">Tobin</a>, unless otherwise noted.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script></body></html>

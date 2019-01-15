@@ -1,0 +1,77 @@
+<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> UNIX文件I/O · 十三羽</title><meta name="description" content="UNIX文件I/O - Tobin"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110577953-1"></script><script type="text/javascript">window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-110577953-1');</script></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/CV" target="_self" class="nav-list-link">CV</a></li><li class="nav-list-item"><a href="/about" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">UNIX文件I/O</h1><div class="post-info">Apr 12, 2018</div><div class="post-content"><p>今天说下文件这个主题。</p>
+<p>为什么说到这个？一个重要的原因，UNIX几乎把所有东西都看成文件对待。这也是UNIX简洁的一个体现，可以用一套理念理解系统内大部分原理。另外，越常见越常用的东西其实越难掌握可理解。所谓大道至简，而看似简单其实并不代表容易。</p>
+<p>接下来会先描述内核读取文件的数据结构，再总结文件操作函数等。在APUE中，文件I/O这章是先通过文件函数引入进行说明的，这种组织方式便于实际应用以及开发。而本文作为总结就没有按这种方式。</p>
+<a id="more"></a>
+<h2 id="I-O数据结构"><a href="#I-O数据结构" class="headerlink" title="I/O数据结构"></a>I/O数据结构</h2><p><img src="/2018/04/12/tech-apue-file-io/apue-fio-01.png" alt="" width="550" height="300"> </p>
+<p>内核通过3种数据结构表示打开的文件：</p>
+<ol>
+<li>每个进程的<strong>进程表</strong>中，包含一张打开的文件描述符表，每项包括：<ul>
+<li>文件描述符</li>
+<li>文件描述符标识</li>
+<li>指向<strong>文件表</strong>的指针</li>
+</ul>
+</li>
+<li>内核为所有打开的文件维持一张<strong>文件表</strong>，每项包括：<ul>
+<li>文件状态标识：读、写、添写、同步和非阻塞等</li>
+<li>当前文件偏移量</li>
+<li>指向该文件<strong>v节点表</strong>项的指针</li>
+</ul>
+</li>
+<li>每个打开的文件或设备都有一个<strong>v节点(v-node)结构</strong>，其包括：<ul>
+<li>文件类型</li>
+<li>对文件进行各种操作函数的指针</li>
+<li>i节点(i-node，索引节点)<ul>
+<li>文件的所有者</li>
+<li>文件长度</li>
+<li>指向文件实际数据块在磁盘上所在位置的指针</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="文件描述符"><a href="#文件描述符" class="headerlink" title="文件描述符"></a>文件描述符</h2><p>对于内核而言，所有打开的文件都是通过文件描述符引用。</p>
+<ul>
+<li>文件描述符是一个<strong>非负整数</strong>。</li>
+<li>当打开一个现有文件或者创建一个新文件时，内核向进程返回一个文件描述符。</li>
+</ul>
+<p>按照惯例，文件描述符0、1和2会被UNIX系统shell默认关联</p>
+<ul>
+<li>文件描述符0：标准输入</li>
+<li>文件描述符1：标准输出</li>
+<li>文件描述符2：标准错误</li>
+</ul>
+<p>通过<code>open</code>和<code>openat</code>函数返回的文件描述符，一定是<strong>最小的未用描述符值</strong>。</p>
+<p>进程终止时，内核自动关闭它打开的所有文件。</p>
+<h2 id="文件偏移量"><a href="#文件偏移量" class="headerlink" title="文件偏移量"></a>文件偏移量</h2><p>每个打开文件都有一个与其相关联的”当前文件偏移量”。通常是一个非负整数，用以度量从文件开始处计算的字节数。</p>
+<p><code>lseek</code>可以显式地为一个打开文件设置偏移量。</p>
+<ul>
+<li>如果一个文件描述符指向的是一个管道、FIFO或网络套接字，则<code>lseek</code>返回-1，并将errno设置为ESPIPE。</li>
+<li><code>lseek</code>仅将当前的文件偏移量记录在内核中，并不引起任何I/O操作。</li>
+</ul>
+<p>文件偏移量可以大于文件的当前长度。在这种情况下，对该文件的下一次写将加长该文件，并在文件中构成一个<strong>空洞</strong>。</p>
+<ul>
+<li>位于文件中但没有写过的字节都被读为0。</li>
+<li>文件中的空洞并不要求在磁盘上占用存储区。</li>
+</ul>
+<p>尽管可以实现64位文件偏移量，但能否创建一个大于2GB(2^31 -1字节)的文件依赖于底层文件系统的类型。</p>
+<h2 id="文件共享"><a href="#文件共享" class="headerlink" title="文件共享"></a>文件共享</h2><p><img src="/2018/04/12/tech-apue-file-io/apue-fio-02.png" alt="" width="550" height="360"> </p>
+<p>每个进程都获得自己的文件表项</p>
+<ul>
+<li>每个进程都有它自己的对该文件的当前偏移量</li>
+<li><code>lseek</code>函数只修改文件表项中的当前文件偏移量，不进行任何I/O操作</li>
+</ul>
+<h2 id="原子操作"><a href="#原子操作" class="headerlink" title="原子操作"></a>原子操作</h2><p>一般而言，原子操作指的是由多步组成的一个操作。如果该操作原子地执行，则要么执行完所有步骤，要么一步也不执行。不可能只执行所有步骤的一个子集。</p>
+<h2 id="缓冲区"><a href="#缓冲区" class="headerlink" title="缓冲区"></a>缓冲区</h2><p>传统的UNIX系统实现在内核中设有<strong>缓冲区高速缓存</strong>或<strong>页高速缓存</strong>，大多数磁盘I/O都通过缓冲区进行。</p>
+<p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/04/12/tech-apue-file-io/">http://www.thirteenyu.com/2018/04/12/tech-apue-file-io/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>
+</div></article></div></section><footer><div class="paginator"><a href="/2018/04/18/tech-java-concurrency-in-practice-02/" class="prev">上一篇</a><a href="/2018/04/11/tech-apue-process-communcation/" class="next">下一篇</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'thirteenyu';
+var disqus_identifier = '2018/04/12/tech-apue-file-io/';
+var disqus_title = 'UNIX文件I/O';
+var disqus_url = 'http://www.thirteenyu.com/2018/04/12/tech-apue-file-io/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//thirteenyu.disqus.com/count.js" async></script><div class="copyright"><p>Hosted by <a href="https://pages.github.com">Github Pages</a> / <a href="https://pages.coding.me">Coding Pages</a></p><p>© 2010 - 2019 <a href="http://www.thirteenyu.com">Tobin</a>, unless otherwise noted.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script></body></html>
