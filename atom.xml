@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.thirteenyu.com/"/>
-  <updated>2019-01-15T18:39:39.887Z</updated>
+  <updated>2019-04-20T07:52:08.332Z</updated>
   <id>http://www.thirteenyu.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>shadowsocks-win-4.1.6 无法启动</title>
+    <link href="http://www.thirteenyu.com/2019/04/20/conf-shadowsocks-win-app-crash/"/>
+    <id>http://www.thirteenyu.com/2019/04/20/conf-shadowsocks-win-app-crash/</id>
+    <published>2019-04-20T07:07:32.000Z</published>
+    <updated>2019-04-20T07:52:08.332Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>简单记录一下配置，以免找不着。</p></blockquote><p>新切换到一个win虚拟机，准备一下开发环境。可是没能访问Google，实在是憋屈。<br>众所周知，ss是用来干啥的。所以就在Github上找了一下<a href="https://github.com/shadowsocks/shadowsocks-windows/releases" target="_blank" rel="noopener">客户端</a>下载安装。<br>其实是免安装的，直接打开就报下面的错了：</p><p><img src="/2019/04/20/conf-shadowsocks-win-app-crash/1.jpg" alt="APP CRASH"></p><p>有兴趣了解处理细节的，可以点<code>...more</code>看下去。<br>想快速处理的，可以直接看解决方案，也就是补充安装对应依赖库即可：</p><ul><li><a href="https://dotnet.microsoft.com/download/dotnet-framework/net472" target="_blank" rel="noopener">https://dotnet.microsoft.com/download/dotnet-framework/net472</a></li><li><a href="https://www.microsoft.com/en-us/download/details.aspx?id=48145" target="_blank" rel="noopener">https://www.microsoft.com/en-us/download/details.aspx?id=48145</a></li></ul><a id="more"></a><p>继续小剧场…</p><p>看到报错心凉了半截。毕竟面向搜索引擎编程，又不能打开Google，慌慌的。<br>但回头一想，以前ss也没这么弱呀~ 一般都是打开就行了，哪有这么容易就CRASH的。<br>结合当前的系统状况想了想，猜测是缺了库的原因。当前的系统十分干净，连个QQ都没有。而且现在软件开发都不是自己重造轮子，肯定依赖一些流行的框架或者库，例如glibc、.NET Framework等。</p><p>沿着这个思路，基本定位了Windows下两大必备库：</p><ul><li>.NET Framework</li><li>Visual C++ distribution</li></ul><p>那具体版本咧？基本就是瞎蒙的时候了。。<br>因为下载ss的版本号为4.1.6，对于当前来说已经比较新了。跟以前版本对比，旧版本基本不需要安装其他组件都能启动起来，但是4.x版本却无法启动。<br>于是估计为最新版本的：<a href="https://dotnet.microsoft.com/download/dotnet-framework" target="_blank" rel="noopener">.NET Framework 4.7.2</a>，<a href="https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads" target="_blank" rel="noopener">C++ distribution 2017</a><br>结果还是不对 😅 。最后花了点时间逐个试了下，发现C++ distribution 2015版本就可以了 (￣▽￣)~* </p><p>小剧场完。</p><p><img src="/2019/04/20/conf-shadowsocks-win-app-crash/2.jpg" alt="APP DONE" width="466" height="474"></p><p>后来连上ss才发现已有issue讨论了，供参考：<a href="https://github.com/shadowsocks/shadowsocks-windows/issues/2293" target="_blank" rel="noopener">https://github.com/shadowsocks/shadowsocks-windows/issues/2293</a></p><p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2019/04/20/conf-shadowsocks-win-app-crash/">http://www.thirteenyu.com/2019/04/20/conf-shadowsocks-win-app-crash/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;简单记录一下配置，以免找不着。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;新切换到一个win虚拟机，准备一下开发环境。可是没能访问Google，实在是憋屈。&lt;br&gt;众所周知，ss是用来干啥的。所以就在Github上找了一下&lt;a href=&quot;https://github.com/shadowsocks/shadowsocks-windows/releases&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;客户端&lt;/a&gt;下载安装。&lt;br&gt;其实是免安装的，直接打开就报下面的错了：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2019/04/20/conf-shadowsocks-win-app-crash/1.jpg&quot; alt=&quot;APP CRASH&quot;&gt;&lt;/p&gt;
+&lt;p&gt;有兴趣了解处理细节的，可以点&lt;code&gt;...more&lt;/code&gt;看下去。&lt;br&gt;想快速处理的，可以直接看解决方案，也就是补充安装对应依赖库即可：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://dotnet.microsoft.com/download/dotnet-framework/net472&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://dotnet.microsoft.com/download/dotnet-framework/net472&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.microsoft.com/en-us/download/details.aspx?id=48145&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.microsoft.com/en-us/download/details.aspx?id=48145&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="配置" scheme="http://www.thirteenyu.com/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>PMP备考-前三章</title>
@@ -605,33 +634,6 @@
       &lt;p&gt;今天说下文件这个主题。&lt;/p&gt;
 &lt;p&gt;为什么说到这个？一个重要的原因，UNIX几乎把所有东西都看成文件对待。这也是UNIX简洁的一个体现，可以用一套理念理解系统内大部分原理。另外，越常见越常用的东西其实越难掌握可理解。所谓大道至简，而看似简单其实并不代表容易。&lt;/p&gt;
 &lt;p&gt;接下来会先描述内核读取文件的数据结构，再总结文件操作函数等。在APUE中，文件I/O这章是先通过文件函数引入进行说明的，这种组织方式便于实际应用以及开发。而本文作为总结就没有按这种方式。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="http://www.thirteenyu.com/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="读书" scheme="http://www.thirteenyu.com/tags/%E8%AF%BB%E4%B9%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>理解进程间通信</title>
-    <link href="http://www.thirteenyu.com/2018/04/11/tech-apue-process-communcation/"/>
-    <id>http://www.thirteenyu.com/2018/04/11/tech-apue-process-communcation/</id>
-    <published>2018-04-10T16:57:59.000Z</published>
-    <updated>2018-12-16T17:19:50.837Z</updated>
-    
-    <content type="html"><![CDATA[<p>进程、线程一类的，其实接触得挺早，但是没有深入使用。最早认识多进程多线程，是在学校网络中心参加一个并行计算比赛时了解的。但是建立的认识就是MPI、OPENMP之类的。然后没了解多久，就开始了GPU和PHI的调用了。</p><p>真要自己说清楚进程线程的区别，还真是比较难。一方面很早接触就往应用上走，没有深入了解实现原理；另一方面轮子封装得实在是好，一些坑早就被趟平了，也就没机会接触到。</p><p>然而这又是了解当今多核计算必不可缺的一环，短板还是得补上。</p><p>以前对进程通信方式的理解，就是两种，共享内存与消息同步。共享内存相当于定义共同访问空间；消息同步相当于发布者订阅者一类的方式。</p><p>不过这个理解还是比较狭隘的，或者还是十分简陋的。针对上述的理解，现在的我会质疑，共享内存怎么在进程间实现？那管道一类的方式又是属于哪种通信类型？事实上还不能简单以两种方式总结进程通信方式。</p><p>结合网上的资料以及手中的UNIX环境高级编程(APUE)，以下是本人对进程通信的新的理解。</p><a id="more"></a><h2 id="进程通信方式"><a href="#进程通信方式" class="headerlink" title="进程通信方式"></a>进程通信方式</h2><ol><li>管道（pipe）</li><li>命名管道（FIFO）</li><li>信号（signal）</li><li>消息队列</li><li>共享内存</li><li>信号量</li><li>套接字（socket)</li></ol><h2 id="IPC方式详解"><a href="#IPC方式详解" class="headerlink" title="IPC方式详解"></a>IPC方式详解</h2><blockquote><p>InterProcess Communication -&gt; IPC</p></blockquote><h4 id="管道"><a href="#管道" class="headerlink" title="管道"></a>管道</h4><ol><li><p>在APUE中的描述：管道是UNIX系统IPC的最古老的方式，所有UNIX都支持。</p></li><li><p>特征</p><ul><li>历史上，曾经是半双工的，也即数据只能往一个方向流动；</li><li>管道智能在具有公共祖先的两个进程之间使用；</li></ul></li><li><p>示例</p><ul><li>下图来自APUE：<img src="/2018/04/11/tech-apue-process-communcation/apue-ipc-01.png" alt="" width="200" height="100"> <img src="/2018/04/11/tech-apue-process-communcation/apue-ipc-02.png" alt="" width="200" height="100"> <img src="/2018/04/11/tech-apue-process-communcation/apue-ipc-03.png" alt="" width="200" height="100"></li><li>截图展示了管道使用的方式：<ul><li>通常，一个管道由一个进程创建，在进程调用fork之后，这个管道就能在父进程和子进程之间使用了。</li><li>这里同时还提到一个概念：协同进程，当一个过滤程序既产生某个过滤程序的输入，又读取改过滤程序的输出时，它就变成了协同进程(coprocess)。 <img src="/2018/04/11/tech-apue-process-communcation/apue-ipc-04.png" alt="" width="200" height="100"></li></ul></li></ul></li><li><p>理解</p></li></ol><ul><li>管道为什么不能在非公共祖先的进程之间使用？由于管道没有名字的原因，所以不能跨进程的地址空间进行使用。这里这句话不是绝对的，因为从技术上可以在进程间传递管道的描述符。</li><li>那在命令行中常用的管道(命令)<code>|</code>又是什么意思？实际上是每个单独的程序(进程)与内核产生的管道(通过标准输入0和标准输出1)实现通信，然后内核把上一条命令的标准输出与下一条命令的标准输入关联。而并非两个进程直接相关的管道。</li></ul><h4 id="命名管道"><a href="#命名管道" class="headerlink" title="命名管道"></a>命名管道</h4><ol><li><p>区别于管道，命名管道支持不相关进程的通信。</p></li><li><p>FIFO实际是一种文件类型。FIFO的路径名存在于文件系统中。</p></li><li><p>用途</p><ul><li>shell命令使用FIFO将数据从一条管道传送到另一条时，无需创建中间临时文件；</li><li>客户进程-服务器进程应用程序中，FIFO用作汇聚点，在客户进程和服务器进程二者之间传递数据；</li></ul></li><li><p>理解</p></li></ol><ul><li>如何实现命名管道？从其名字看，关键就在于命名，并把命名共享到需要通信的两者或多者之间。而同时注意到FIFO是一种文件类型，所以其也有绝对路径相对路径的说法。本人姑且粗鄙地理解成通过一个txt文件传递信息，但是不需要真正写到txt文件上都可以进行通信。</li></ul><h4 id="XSI-IPC"><a href="#XSI-IPC" class="headerlink" title="* XSI IPC"></a>* XSI IPC</h4><ol><li><p>其包括<strong>消息队列</strong>、<strong>信号量</strong>以及<strong>共享存储器</strong></p></li><li><p>此类的IPC都用一个非负整数的标识符加以引用</p><ul><li>标识符是IPC对象的内部名：当一个IPC结构被创建，然后又被删除时，与这种结构相关的标识符连续加1，直到达到一个整型数的最大正值，然后又回转到0；</li><li>为使多个合作进程能够在同一IPC对象上汇聚，需要提供一个外部命名方案：每个IPC对象斗鱼一个键关联，将这个键作为该对象的外部名。方式如下：<ul><li>存储标识符在某处(如一个文件)以便客户进程取用</li><li>在一个公用头文件中定义一个客户进程和服务器进程都认可的键</li><li>调用<code>ftok</code>把得到认同的一个路径名和项目ID转换成一个键</li></ul></li></ul></li><li><p>理解</p></li></ol><ul><li>有点像命名管道嘛。。就是提供不一样的数据结构。</li><li>XSI IPC的一个基本问题是，在系统范围内起作用的，没有引用计数。</li><li>XSI IPC的另一个问题是，在文件系统中没有名字。</li></ul><h6 id="消息队列"><a href="#消息队列" class="headerlink" title="消息队列"></a>消息队列</h6><ol><li>消息队列是消息的链接表，存储在内核中，由消息队列标识符标识</li></ol><h6 id="信号量"><a href="#信号量" class="headerlink" title="信号量"></a>信号量</h6><ol><li><p>信号量是一个计数器，用于为多个进程提供对共享数据对象的访问</p></li><li><p>为了正确的实现信号量，信号量的测试以及减1操作应当是原子操作，为此信号量通常是在内核中实现的</p></li></ol><h6 id="共享存储器"><a href="#共享存储器" class="headerlink" title="共享存储器"></a>共享存储器</h6><ol><li><p>共享存储允许两个或多个进程共享一个给定的存储区</p></li><li><p>最快的IPC，无需在客户进程和服务器进程之间复制</p></li><li><p>唯一窍门，在多个进程之间<strong>同步</strong>访问一个给定的存储区</p><ul><li>信号量</li><li>锁</li><li>互斥量 </li></ul></li></ol><h2 id="参考内容"><a href="#参考内容" class="headerlink" title="参考内容"></a>参考内容</h2><ol><li><a href="https://blog.csdn.net/gatieme/article/details/50908749" target="_blank" rel="noopener">Linux进程间通信的几种方式总结–linux内核剖析（七）</a></li></ol><p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/04/11/tech-apue-process-communcation/">http://www.thirteenyu.com/2018/04/11/tech-apue-process-communcation/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;进程、线程一类的，其实接触得挺早，但是没有深入使用。最早认识多进程多线程，是在学校网络中心参加一个并行计算比赛时了解的。但是建立的认识就是MPI、OPENMP之类的。然后没了解多久，就开始了GPU和PHI的调用了。&lt;/p&gt;
-&lt;p&gt;真要自己说清楚进程线程的区别，还真是比较难。一方面很早接触就往应用上走，没有深入了解实现原理；另一方面轮子封装得实在是好，一些坑早就被趟平了，也就没机会接触到。&lt;/p&gt;
-&lt;p&gt;然而这又是了解当今多核计算必不可缺的一环，短板还是得补上。&lt;/p&gt;
-&lt;p&gt;以前对进程通信方式的理解，就是两种，共享内存与消息同步。共享内存相当于定义共同访问空间；消息同步相当于发布者订阅者一类的方式。&lt;/p&gt;
-&lt;p&gt;不过这个理解还是比较狭隘的，或者还是十分简陋的。针对上述的理解，现在的我会质疑，共享内存怎么在进程间实现？那管道一类的方式又是属于哪种通信类型？事实上还不能简单以两种方式总结进程通信方式。&lt;/p&gt;
-&lt;p&gt;结合网上的资料以及手中的UNIX环境高级编程(APUE)，以下是本人对进程通信的新的理解。&lt;/p&gt;
     
     </summary>
     

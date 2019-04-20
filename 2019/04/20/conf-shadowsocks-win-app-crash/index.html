@@ -1,0 +1,35 @@
+<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> shadowsocks-win-4.1.6 无法启动 · 十三羽</title><meta name="description" content="shadowsocks-win-4.1.6 无法启动 - Tobin"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-110577953-1"></script><script type="text/javascript">window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-110577953-1');</script></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/CV" target="_self" class="nav-list-link">CV</a></li><li class="nav-list-item"><a href="/about" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">shadowsocks-win-4.1.6 无法启动</h1><div class="post-info">Apr 20, 2019</div><div class="post-content"><blockquote>
+<p>简单记录一下配置，以免找不着。</p>
+</blockquote>
+<p>新切换到一个win虚拟机，准备一下开发环境。可是没能访问Google，实在是憋屈。<br>众所周知，ss是用来干啥的。所以就在Github上找了一下<a href="https://github.com/shadowsocks/shadowsocks-windows/releases" target="_blank" rel="noopener">客户端</a>下载安装。<br>其实是免安装的，直接打开就报下面的错了：</p>
+<p><img src="/2019/04/20/conf-shadowsocks-win-app-crash/1.jpg" alt="APP CRASH"></p>
+<p>有兴趣了解处理细节的，可以点<code>...more</code>看下去。<br>想快速处理的，可以直接看解决方案，也就是补充安装对应依赖库即可：</p>
+<ul>
+<li><a href="https://dotnet.microsoft.com/download/dotnet-framework/net472" target="_blank" rel="noopener">https://dotnet.microsoft.com/download/dotnet-framework/net472</a></li>
+<li><a href="https://www.microsoft.com/en-us/download/details.aspx?id=48145" target="_blank" rel="noopener">https://www.microsoft.com/en-us/download/details.aspx?id=48145</a></li>
+</ul>
+<a id="more"></a>
+<p>继续小剧场…</p>
+<p>看到报错心凉了半截。毕竟面向搜索引擎编程，又不能打开Google，慌慌的。<br>但回头一想，以前ss也没这么弱呀~ 一般都是打开就行了，哪有这么容易就CRASH的。<br>结合当前的系统状况想了想，猜测是缺了库的原因。当前的系统十分干净，连个QQ都没有。而且现在软件开发都不是自己重造轮子，肯定依赖一些流行的框架或者库，例如glibc、.NET Framework等。</p>
+<p>沿着这个思路，基本定位了Windows下两大必备库：</p>
+<ul>
+<li>.NET Framework</li>
+<li>Visual C++ distribution</li>
+</ul>
+<p>那具体版本咧？基本就是瞎蒙的时候了。。<br>因为下载ss的版本号为4.1.6，对于当前来说已经比较新了。跟以前版本对比，旧版本基本不需要安装其他组件都能启动起来，但是4.x版本却无法启动。<br>于是估计为最新版本的：<a href="https://dotnet.microsoft.com/download/dotnet-framework" target="_blank" rel="noopener">.NET Framework 4.7.2</a>，<a href="https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads" target="_blank" rel="noopener">C++ distribution 2017</a><br>结果还是不对 😅 。最后花了点时间逐个试了下，发现C++ distribution 2015版本就可以了 (￣▽￣)~* </p>
+<p>小剧场完。</p>
+<p><img src="/2019/04/20/conf-shadowsocks-win-app-crash/2.jpg" alt="APP DONE" width="466" height="474"></p>
+<p>后来连上ss才发现已有issue讨论了，供参考：<a href="https://github.com/shadowsocks/shadowsocks-windows/issues/2293" target="_blank" rel="noopener">https://github.com/shadowsocks/shadowsocks-windows/issues/2293</a></p>
+<p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2019/04/20/conf-shadowsocks-win-app-crash/">http://www.thirteenyu.com/2019/04/20/conf-shadowsocks-win-app-crash/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>
+</div></article></div></section><footer><div class="paginator"><a href="/2018/11/19/share-pmp-pre3/" class="next">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'thirteenyu';
+var disqus_identifier = '2019/04/20/conf-shadowsocks-win-app-crash/';
+var disqus_title = 'shadowsocks-win-4.1.6 无法启动';
+var disqus_url = 'http://www.thirteenyu.com/2019/04/20/conf-shadowsocks-win-app-crash/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//thirteenyu.disqus.com/count.js" async></script><div class="copyright"><p>Hosted by <a href="https://pages.github.com">Github Pages</a> / <a href="https://pages.coding.me">Coding Pages</a></p><p>© 2010 - 2019 <a href="http://www.thirteenyu.com">Tobin</a>, unless otherwise noted.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script></body></html>
