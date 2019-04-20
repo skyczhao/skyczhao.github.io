@@ -46,6 +46,32 @@
   </entry>
   
   <entry>
+    <title>代理小工具</title>
+    <link href="http://www.thirteenyu.com/2019/03/28/share-proxy-tricks/"/>
+    <id>http://www.thirteenyu.com/2019/03/28/share-proxy-tricks/</id>
+    <published>2019-03-28T14:30:29.000Z</published>
+    <updated>2019-04-20T15:11:48.260Z</updated>
+    
+    <content type="html"><![CDATA[<p>外包做得多了，常常被客户内网环境恶心到。为了保护内网信息，许多公司都会引入VPN，各种各样都有。</p><p>常见的方式，就是让你账号密码登陆一遍VPN就可以。这种也是最理想的，但是有些不一定适用于Mac。常见的例如SSL VPN、OpenVPN、Cisco VPN…</p><p>有些恶心的就会加上动态密码，输入密码同时还需要添加一小段token到密码后面。常见的就有VIP Access、RSA SecurID、短信验证码…</p><p><img src="/2019/03/28/share-proxy-tricks/1.jpg" alt="TOKEN"></p><p>再恶心点，就是登陆VPN后，也只能访问指定的页面。如果要登陆终端，会弹出下载内容，用xshell或者rdp打开，一般有效期都比较短。</p><p><img src="/2019/03/28/share-proxy-tricks/2.jpg" alt="WEB CONTROL"></p><p>为了提高工作效率，一些Proxy的小技巧就不得不用上。虽然理解客户出于保护数据的做法，但毕竟工序太长，耗太多时间在链接上就不太好。</p><a id="more"></a><p>两个明星工具：</p><ul><li>Fiddler</li><li>Proxifier</li></ul><h4 id="Fiddler"><a href="#Fiddler" class="headerlink" title="Fiddler"></a>Fiddler</h4><blockquote><p><a href="https://www.telerik.com/fiddler" target="_blank" rel="noopener">Fiddler - Free Web Debugging Proxy - Telerik</a></p></blockquote><p>Fiddler实际上是个抓包工具。但是有没有想过其实它也是一个极佳的代理工具？<br>在Windows上，如果你想打造成一个代理服务器，你会怎么做？会不会忽然间就脑子短路，没想到用啥？还是说nginx？apache？<br>其他的工具，个人看来都没有Fiddler方便。</p><p>它的优势：</p><ul><li>免费、轻量</li><li>易用：打开就是HTTP代理，使用时在Wifi配置、SwitchyOmega等都轻松配置，在终端<code>export HTTP_PROXY...</code>就轻松加入代理</li><li>可视化：能够轻易看到经过代理的有什么流量</li></ul><p><img src="/2019/03/28/share-proxy-tricks/3.png" alt="Fiddler"></p><h4 id="Proxifier"><a href="#Proxifier" class="headerlink" title="Proxifier"></a>Proxifier</h4><blockquote><p><a href="https://www.proxifier.com/" target="_blank" rel="noopener">Proxifier - The Most Advanced Proxy Client</a></p></blockquote><p>看其官网标题就可以感受到它的自信。<br>其强悍的定点代理能力是我感觉特别棒的地方。举个例子，有个代理就只是发生在某几个APP上，你会怎么办？例如Google的同步服务，其他的都不会一直挂着FQ吧？<br>而且其支持的协议层级更低，HTTP代理层无法骗过APP的都可尝试用一下它。</p><p><img src="/2019/03/28/share-proxy-tricks/4.png" alt="Proxifier"></p><p>不知道这两个工具你用过没有？</p><p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2019/03/28/share-proxy-tricks/">http://www.thirteenyu.com/2019/03/28/share-proxy-tricks/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;外包做得多了，常常被客户内网环境恶心到。为了保护内网信息，许多公司都会引入VPN，各种各样都有。&lt;/p&gt;
+&lt;p&gt;常见的方式，就是让你账号密码登陆一遍VPN就可以。这种也是最理想的，但是有些不一定适用于Mac。常见的例如SSL VPN、OpenVPN、Cisco VPN…&lt;/p&gt;
+&lt;p&gt;有些恶心的就会加上动态密码，输入密码同时还需要添加一小段token到密码后面。常见的就有VIP Access、RSA SecurID、短信验证码…&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2019/03/28/share-proxy-tricks/1.jpg&quot; alt=&quot;TOKEN&quot;&gt;&lt;/p&gt;
+&lt;p&gt;再恶心点，就是登陆VPN后，也只能访问指定的页面。如果要登陆终端，会弹出下载内容，用xshell或者rdp打开，一般有效期都比较短。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2019/03/28/share-proxy-tricks/2.jpg&quot; alt=&quot;WEB CONTROL&quot;&gt;&lt;/p&gt;
+&lt;p&gt;为了提高工作效率，一些Proxy的小技巧就不得不用上。虽然理解客户出于保护数据的做法，但毕竟工序太长，耗太多时间在链接上就不太好。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="分享" scheme="http://www.thirteenyu.com/tags/%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PMP备考-前三章</title>
     <link href="http://www.thirteenyu.com/2018/11/19/share-pmp-pre3/"/>
     <id>http://www.thirteenyu.com/2018/11/19/share-pmp-pre3/</id>
@@ -610,30 +636,6 @@
       &lt;p&gt;先回顾一下，已经有4天没更新了。其实上周五有准备要写一篇的，关于最近的面试。但是还没定下来就没敢随便发出来。而这周开始刚好又多个项目告急，实在没抽出时间更新。&lt;/p&gt;
 &lt;p&gt;今天想着无论如何都要更新一篇了。虽晚但也要完成。&lt;/p&gt;
 &lt;p&gt;主题也是读书笔记，关于线程带来的风险。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="http://www.thirteenyu.com/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="读书" scheme="http://www.thirteenyu.com/tags/%E8%AF%BB%E4%B9%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>UNIX文件I/O</title>
-    <link href="http://www.thirteenyu.com/2018/04/12/tech-apue-file-io/"/>
-    <id>http://www.thirteenyu.com/2018/04/12/tech-apue-file-io/</id>
-    <published>2018-04-12T05:44:00.000Z</published>
-    <updated>2018-12-16T17:19:50.835Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天说下文件这个主题。</p><p>为什么说到这个？一个重要的原因，UNIX几乎把所有东西都看成文件对待。这也是UNIX简洁的一个体现，可以用一套理念理解系统内大部分原理。另外，越常见越常用的东西其实越难掌握可理解。所谓大道至简，而看似简单其实并不代表容易。</p><p>接下来会先描述内核读取文件的数据结构，再总结文件操作函数等。在APUE中，文件I/O这章是先通过文件函数引入进行说明的，这种组织方式便于实际应用以及开发。而本文作为总结就没有按这种方式。</p><a id="more"></a><h2 id="I-O数据结构"><a href="#I-O数据结构" class="headerlink" title="I/O数据结构"></a>I/O数据结构</h2><p><img src="/2018/04/12/tech-apue-file-io/apue-fio-01.png" alt="" width="550" height="300"> </p><p>内核通过3种数据结构表示打开的文件：</p><ol><li>每个进程的<strong>进程表</strong>中，包含一张打开的文件描述符表，每项包括：<ul><li>文件描述符</li><li>文件描述符标识</li><li>指向<strong>文件表</strong>的指针</li></ul></li><li>内核为所有打开的文件维持一张<strong>文件表</strong>，每项包括：<ul><li>文件状态标识：读、写、添写、同步和非阻塞等</li><li>当前文件偏移量</li><li>指向该文件<strong>v节点表</strong>项的指针</li></ul></li><li>每个打开的文件或设备都有一个<strong>v节点(v-node)结构</strong>，其包括：<ul><li>文件类型</li><li>对文件进行各种操作函数的指针</li><li>i节点(i-node，索引节点)<ul><li>文件的所有者</li><li>文件长度</li><li>指向文件实际数据块在磁盘上所在位置的指针</li></ul></li></ul></li></ol><h2 id="文件描述符"><a href="#文件描述符" class="headerlink" title="文件描述符"></a>文件描述符</h2><p>对于内核而言，所有打开的文件都是通过文件描述符引用。</p><ul><li>文件描述符是一个<strong>非负整数</strong>。</li><li>当打开一个现有文件或者创建一个新文件时，内核向进程返回一个文件描述符。</li></ul><p>按照惯例，文件描述符0、1和2会被UNIX系统shell默认关联</p><ul><li>文件描述符0：标准输入</li><li>文件描述符1：标准输出</li><li>文件描述符2：标准错误</li></ul><p>通过<code>open</code>和<code>openat</code>函数返回的文件描述符，一定是<strong>最小的未用描述符值</strong>。</p><p>进程终止时，内核自动关闭它打开的所有文件。</p><h2 id="文件偏移量"><a href="#文件偏移量" class="headerlink" title="文件偏移量"></a>文件偏移量</h2><p>每个打开文件都有一个与其相关联的”当前文件偏移量”。通常是一个非负整数，用以度量从文件开始处计算的字节数。</p><p><code>lseek</code>可以显式地为一个打开文件设置偏移量。</p><ul><li>如果一个文件描述符指向的是一个管道、FIFO或网络套接字，则<code>lseek</code>返回-1，并将errno设置为ESPIPE。</li><li><code>lseek</code>仅将当前的文件偏移量记录在内核中，并不引起任何I/O操作。</li></ul><p>文件偏移量可以大于文件的当前长度。在这种情况下，对该文件的下一次写将加长该文件，并在文件中构成一个<strong>空洞</strong>。</p><ul><li>位于文件中但没有写过的字节都被读为0。</li><li>文件中的空洞并不要求在磁盘上占用存储区。</li></ul><p>尽管可以实现64位文件偏移量，但能否创建一个大于2GB(2^31 -1字节)的文件依赖于底层文件系统的类型。</p><h2 id="文件共享"><a href="#文件共享" class="headerlink" title="文件共享"></a>文件共享</h2><p><img src="/2018/04/12/tech-apue-file-io/apue-fio-02.png" alt="" width="550" height="360"> </p><p>每个进程都获得自己的文件表项</p><ul><li>每个进程都有它自己的对该文件的当前偏移量</li><li><code>lseek</code>函数只修改文件表项中的当前文件偏移量，不进行任何I/O操作</li></ul><h2 id="原子操作"><a href="#原子操作" class="headerlink" title="原子操作"></a>原子操作</h2><p>一般而言，原子操作指的是由多步组成的一个操作。如果该操作原子地执行，则要么执行完所有步骤，要么一步也不执行。不可能只执行所有步骤的一个子集。</p><h2 id="缓冲区"><a href="#缓冲区" class="headerlink" title="缓冲区"></a>缓冲区</h2><p>传统的UNIX系统实现在内核中设有<strong>缓冲区高速缓存</strong>或<strong>页高速缓存</strong>，大多数磁盘I/O都通过缓冲区进行。</p><p><strong>本文作者</strong>：Tobin<br><strong>本文地址</strong>： <a href="http://www.thirteenyu.com/2018/04/12/tech-apue-file-io/">http://www.thirteenyu.com/2018/04/12/tech-apue-file-io/</a> <br><strong>版权声明</strong>：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;今天说下文件这个主题。&lt;/p&gt;
-&lt;p&gt;为什么说到这个？一个重要的原因，UNIX几乎把所有东西都看成文件对待。这也是UNIX简洁的一个体现，可以用一套理念理解系统内大部分原理。另外，越常见越常用的东西其实越难掌握可理解。所谓大道至简，而看似简单其实并不代表容易。&lt;/p&gt;
-&lt;p&gt;接下来会先描述内核读取文件的数据结构，再总结文件操作函数等。在APUE中，文件I/O这章是先通过文件函数引入进行说明的，这种组织方式便于实际应用以及开发。而本文作为总结就没有按这种方式。&lt;/p&gt;
     
     </summary>
     
